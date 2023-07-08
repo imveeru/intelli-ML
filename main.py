@@ -60,4 +60,5 @@ if choice=="Modelling":
         save_model(best_model,"best_model")
 
 if choice=="Download":
-    pass
+    with open("best_model.pkl",'rb') as f:
+        st.download_button("Download the best model",f,"best_model.pkl")
