@@ -14,3 +14,10 @@ header {visibility: hidden;}
 </style>
 '''
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+st.title("Download the model and report")
+with open("best_model.pkl",'rb') as f:
+        st.download_button("Download the best model",f,"best_model.pkl")
+
+with open('sourcedata.csv', 'w') as creating_new_csv_file: 
+   pass 
