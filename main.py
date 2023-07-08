@@ -22,3 +22,16 @@ with st.sidebar:
     st.title("🤖 IntelliML")
     choice=st.radio("Navigation",["Upload","Profiling","ML Modelling","Download the model"])
     st.info("This application helps you to build an automated ML pipeline.")
+    
+
+if choice == "Upload":
+    pass
+
+if choice=="Profiling":
+    pass
+
+if choice=="ML Modelling":
+    pass
+
+if choice=="Download the model":
+    pass
