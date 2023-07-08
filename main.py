@@ -28,7 +28,8 @@ if choice == "Upload":
     st.title("Upload your dataset for modelling!")
     file=st.file_uploader("Upload your CSV file here.")
     if file:
-        pass
+        df=pd.read_csv(file)
+        st.dataframe(df)
 
 if choice=="Profiling":
     pass
