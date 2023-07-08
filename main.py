@@ -4,7 +4,7 @@ import os
 from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
-from pycaret.regression import setup,compare_models,pull,save_model
+from pycaret.regression import *
 
 #page config
 st.set_page_config(
@@ -39,11 +39,20 @@ if choice == "Upload":
         df=pd.read_csv(file,index_col=None)
         df.to_csv("sourcedata.csv",index=None)
         st.dataframe(df)
+    
+        if st.button("Next >",key="p1"):
+            choice="Analysis"
  
 if choice=="Analysis":
     st.title("Automated Exploratory Data Analysis")
     profile = ProfileReport(src,explorative=True)
     st_profile_report(profile)
+    
+    if st.button("Next >",key="p21"):
+        choice="Modelling"
+    
+    if st.button("< Previous",key="p22"):
+        choice="Upload"
 
 if choice=="Modelling":
     st.title("Modelling")
@@ -58,6 +67,13 @@ if choice=="Modelling":
         st.info("Model Comparison")
         st.dataframe(compare_df)
         save_model(best_model,"best_model")
+        #plot_model(best_model,plot='feature')
+        
+    if st.button("Next >",key="p31"):
+        choice="Download"
+
+    if st.button("< Previous",key="p32  "):
+        choice="Analysis"
 
 if choice=="Download":
     with open("best_model.pkl",'rb') as f:
