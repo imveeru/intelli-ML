@@ -2030,3 +2030,1260 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2023-07-08 16:27:42,533:INFO:Linear Regression Imported successfully
 2023-07-08 16:27:42,533:INFO:Starting cross validation
 2023-07-08 16:27:42,534:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:43,865:INFO:Calculating mean and std
+2023-07-08 16:27:43,866:WARNING:Processing:   6%|#7                           | 5/81 [00:01<00:20,  3.72it/s]
+2023-07-08 16:27:43,866:INFO:Creating metrics dataframe
+2023-07-08 16:27:43,994:WARNING:Processing:   7%|##1                          | 6/81 [00:01<00:17,  4.21it/s]
+2023-07-08 16:27:43,994:INFO:Uploading results into container
+2023-07-08 16:27:43,995:INFO:Uploading model into container now
+2023-07-08 16:27:43,995:INFO:_master_model_container: 1
+2023-07-08 16:27:43,995:INFO:_display_container: 2
+2023-07-08 16:27:43,996:INFO:LinearRegression(n_jobs=-1)
+2023-07-08 16:27:43,996:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:44,111:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:44,111:INFO:Creating metrics dataframe
+2023-07-08 16:27:44,114:INFO:Initializing Lasso Regression
+2023-07-08 16:27:44,114:INFO:Total runtime is 0.026504993438720703 minutes
+2023-07-08 16:27:44,114:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:44,115:INFO:Initializing create_model()
+2023-07-08 16:27:44,115:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:44,115:INFO:Checking exceptions
+2023-07-08 16:27:44,115:INFO:Importing libraries
+2023-07-08 16:27:44,115:INFO:Copying training dataset
+2023-07-08 16:27:44,122:WARNING:Processing:   9%|##5                          | 7/81 [00:01<00:15,  4.74it/s]
+2023-07-08 16:27:44,122:INFO:Defining folds
+2023-07-08 16:27:44,122:INFO:Declaring metric variables
+2023-07-08 16:27:44,122:INFO:Importing untrained model
+2023-07-08 16:27:44,123:INFO:Lasso Regression Imported successfully
+2023-07-08 16:27:44,123:INFO:Starting cross validation
+2023-07-08 16:27:44,124:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:45,372:INFO:Calculating mean and std
+2023-07-08 16:27:45,373:WARNING:Processing:  11%|###2                         | 9/81 [00:02<00:27,  2.63it/s]
+2023-07-08 16:27:45,373:INFO:Creating metrics dataframe
+2023-07-08 16:27:45,501:WARNING:Processing:  12%|###4                        | 10/81 [00:02<00:22,  3.09it/s]
+2023-07-08 16:27:45,501:INFO:Uploading results into container
+2023-07-08 16:27:45,503:INFO:Uploading model into container now
+2023-07-08 16:27:45,503:INFO:_master_model_container: 2
+2023-07-08 16:27:45,503:INFO:_display_container: 2
+2023-07-08 16:27:45,503:INFO:Lasso(random_state=6855)
+2023-07-08 16:27:45,504:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:45,610:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:45,611:INFO:Creating metrics dataframe
+2023-07-08 16:27:45,615:INFO:Initializing Ridge Regression
+2023-07-08 16:27:45,615:INFO:Total runtime is 0.051533838113149 minutes
+2023-07-08 16:27:45,615:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:45,615:INFO:Initializing create_model()
+2023-07-08 16:27:45,615:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:45,616:INFO:Checking exceptions
+2023-07-08 16:27:45,616:INFO:Importing libraries
+2023-07-08 16:27:45,616:INFO:Copying training dataset
+2023-07-08 16:27:45,621:WARNING:Processing:  14%|###8                        | 11/81 [00:03<00:19,  3.66it/s]
+2023-07-08 16:27:45,621:INFO:Defining folds
+2023-07-08 16:27:45,621:INFO:Declaring metric variables
+2023-07-08 16:27:45,621:INFO:Importing untrained model
+2023-07-08 16:27:45,621:INFO:Ridge Regression Imported successfully
+2023-07-08 16:27:45,622:INFO:Starting cross validation
+2023-07-08 16:27:45,622:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:47,016:INFO:Calculating mean and std
+2023-07-08 16:27:47,017:WARNING:Processing:  16%|####4                       | 13/81 [00:04<00:30,  2.23it/s]
+2023-07-08 16:27:47,017:INFO:Creating metrics dataframe
+2023-07-08 16:27:47,127:WARNING:Processing:  17%|####8                       | 14/81 [00:04<00:24,  2.69it/s]
+2023-07-08 16:27:47,127:INFO:Uploading results into container
+2023-07-08 16:27:47,128:INFO:Uploading model into container now
+2023-07-08 16:27:47,128:INFO:_master_model_container: 3
+2023-07-08 16:27:47,128:INFO:_display_container: 2
+2023-07-08 16:27:47,129:INFO:Ridge(random_state=6855)
+2023-07-08 16:27:47,129:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:47,229:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:47,229:INFO:Creating metrics dataframe
+2023-07-08 16:27:47,233:INFO:Initializing Elastic Net
+2023-07-08 16:27:47,233:INFO:Total runtime is 0.07849046786626179 minutes
+2023-07-08 16:27:47,234:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:47,234:INFO:Initializing create_model()
+2023-07-08 16:27:47,234:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:47,234:INFO:Checking exceptions
+2023-07-08 16:27:47,234:INFO:Importing libraries
+2023-07-08 16:27:47,234:INFO:Copying training dataset
+2023-07-08 16:27:47,239:WARNING:Processing:  19%|#####1                      | 15/81 [00:04<00:20,  3.25it/s]
+2023-07-08 16:27:47,239:INFO:Defining folds
+2023-07-08 16:27:47,239:INFO:Declaring metric variables
+2023-07-08 16:27:47,239:INFO:Importing untrained model
+2023-07-08 16:27:47,240:INFO:Elastic Net Imported successfully
+2023-07-08 16:27:47,240:INFO:Starting cross validation
+2023-07-08 16:27:47,241:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:48,462:INFO:Calculating mean and std
+2023-07-08 16:27:48,463:WARNING:Processing:  21%|#####8                      | 17/81 [00:05<00:27,  2.31it/s]
+2023-07-08 16:27:48,463:INFO:Creating metrics dataframe
+2023-07-08 16:27:48,582:WARNING:Processing:  22%|######2                     | 18/81 [00:06<00:22,  2.77it/s]
+2023-07-08 16:27:48,582:INFO:Uploading results into container
+2023-07-08 16:27:48,583:INFO:Uploading model into container now
+2023-07-08 16:27:48,584:INFO:_master_model_container: 4
+2023-07-08 16:27:48,585:INFO:_display_container: 2
+2023-07-08 16:27:48,585:INFO:ElasticNet(random_state=6855)
+2023-07-08 16:27:48,585:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:48,695:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:48,695:INFO:Creating metrics dataframe
+2023-07-08 16:27:48,698:INFO:Initializing Least Angle Regression
+2023-07-08 16:27:48,698:INFO:Total runtime is 0.10291275183359781 minutes
+2023-07-08 16:27:48,699:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:48,699:INFO:Initializing create_model()
+2023-07-08 16:27:48,699:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:48,699:INFO:Checking exceptions
+2023-07-08 16:27:48,699:INFO:Importing libraries
+2023-07-08 16:27:48,699:INFO:Copying training dataset
+2023-07-08 16:27:48,705:WARNING:Processing:  23%|######5                     | 19/81 [00:06<00:18,  3.30it/s]
+2023-07-08 16:27:48,705:INFO:Defining folds
+2023-07-08 16:27:48,705:INFO:Declaring metric variables
+2023-07-08 16:27:48,706:INFO:Importing untrained model
+2023-07-08 16:27:48,706:INFO:Least Angle Regression Imported successfully
+2023-07-08 16:27:48,706:INFO:Starting cross validation
+2023-07-08 16:27:48,707:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:49,924:INFO:Calculating mean and std
+2023-07-08 16:27:49,925:WARNING:Processing:  26%|#######2                    | 21/81 [00:07<00:25,  2.33it/s]
+2023-07-08 16:27:49,925:INFO:Creating metrics dataframe
+2023-07-08 16:27:50,036:WARNING:Processing:  27%|#######6                    | 22/81 [00:07<00:21,  2.80it/s]
+2023-07-08 16:27:50,037:INFO:Uploading results into container
+2023-07-08 16:27:50,037:INFO:Uploading model into container now
+2023-07-08 16:27:50,038:INFO:_master_model_container: 5
+2023-07-08 16:27:50,038:INFO:_display_container: 2
+2023-07-08 16:27:50,038:INFO:Lars(random_state=6855)
+2023-07-08 16:27:50,038:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:50,140:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:50,140:INFO:Creating metrics dataframe
+2023-07-08 16:27:50,144:INFO:Initializing Lasso Least Angle Regression
+2023-07-08 16:27:50,144:INFO:Total runtime is 0.12701305945714314 minutes
+2023-07-08 16:27:50,144:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:50,144:INFO:Initializing create_model()
+2023-07-08 16:27:50,144:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:50,144:INFO:Checking exceptions
+2023-07-08 16:27:50,144:INFO:Importing libraries
+2023-07-08 16:27:50,144:INFO:Copying training dataset
+2023-07-08 16:27:50,149:WARNING:Processing:  28%|#######9                    | 23/81 [00:07<00:17,  3.36it/s]
+2023-07-08 16:27:50,149:INFO:Defining folds
+2023-07-08 16:27:50,150:INFO:Declaring metric variables
+2023-07-08 16:27:50,150:INFO:Importing untrained model
+2023-07-08 16:27:50,151:INFO:Lasso Least Angle Regression Imported successfully
+2023-07-08 16:27:50,151:INFO:Starting cross validation
+2023-07-08 16:27:50,152:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:51,372:INFO:Calculating mean and std
+2023-07-08 16:27:51,373:WARNING:Processing:  31%|########6                   | 25/81 [00:08<00:23,  2.34it/s]
+2023-07-08 16:27:51,373:INFO:Creating metrics dataframe
+2023-07-08 16:27:51,497:WARNING:Processing:  32%|########9                   | 26/81 [00:08<00:19,  2.79it/s]
+2023-07-08 16:27:51,497:INFO:Uploading results into container
+2023-07-08 16:27:51,498:INFO:Uploading model into container now
+2023-07-08 16:27:51,499:INFO:_master_model_container: 6
+2023-07-08 16:27:51,499:INFO:_display_container: 2
+2023-07-08 16:27:51,499:INFO:LassoLars(random_state=6855)
+2023-07-08 16:27:51,499:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:51,606:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:51,606:INFO:Creating metrics dataframe
+2023-07-08 16:27:51,610:INFO:Initializing Orthogonal Matching Pursuit
+2023-07-08 16:27:51,610:INFO:Total runtime is 0.1514479398727417 minutes
+2023-07-08 16:27:51,610:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:51,610:INFO:Initializing create_model()
+2023-07-08 16:27:51,610:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:51,610:INFO:Checking exceptions
+2023-07-08 16:27:51,610:INFO:Importing libraries
+2023-07-08 16:27:51,610:INFO:Copying training dataset
+2023-07-08 16:27:51,618:WARNING:Processing:  33%|#########3                  | 27/81 [00:09<00:16,  3.33it/s]
+2023-07-08 16:27:51,618:INFO:Defining folds
+2023-07-08 16:27:51,619:INFO:Declaring metric variables
+2023-07-08 16:27:51,619:INFO:Importing untrained model
+2023-07-08 16:27:51,619:INFO:Orthogonal Matching Pursuit Imported successfully
+2023-07-08 16:27:51,619:INFO:Starting cross validation
+2023-07-08 16:27:51,620:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:53,000:INFO:Calculating mean and std
+2023-07-08 16:27:53,001:WARNING:Processing:  36%|##########                  | 29/81 [00:10<00:23,  2.17it/s]
+2023-07-08 16:27:53,001:INFO:Creating metrics dataframe
+2023-07-08 16:27:53,128:WARNING:Processing:  37%|##########3                 | 30/81 [00:10<00:19,  2.60it/s]
+2023-07-08 16:27:53,128:INFO:Uploading results into container
+2023-07-08 16:27:53,129:INFO:Uploading model into container now
+2023-07-08 16:27:53,129:INFO:_master_model_container: 7
+2023-07-08 16:27:53,129:INFO:_display_container: 2
+2023-07-08 16:27:53,130:INFO:OrthogonalMatchingPursuit()
+2023-07-08 16:27:53,130:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:53,233:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:53,233:INFO:Creating metrics dataframe
+2023-07-08 16:27:53,237:INFO:Initializing Bayesian Ridge
+2023-07-08 16:27:53,237:INFO:Total runtime is 0.17856661081314085 minutes
+2023-07-08 16:27:53,237:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:53,238:INFO:Initializing create_model()
+2023-07-08 16:27:53,238:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:53,238:INFO:Checking exceptions
+2023-07-08 16:27:53,238:INFO:Importing libraries
+2023-07-08 16:27:53,238:INFO:Copying training dataset
+2023-07-08 16:27:53,244:WARNING:Processing:  38%|##########7                 | 31/81 [00:10<00:15,  3.13it/s]
+2023-07-08 16:27:53,244:INFO:Defining folds
+2023-07-08 16:27:53,245:INFO:Declaring metric variables
+2023-07-08 16:27:53,245:INFO:Importing untrained model
+2023-07-08 16:27:53,245:INFO:Bayesian Ridge Imported successfully
+2023-07-08 16:27:53,245:INFO:Starting cross validation
+2023-07-08 16:27:53,246:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:54,582:INFO:Calculating mean and std
+2023-07-08 16:27:54,583:WARNING:Processing:  41%|###########4                | 33/81 [00:12<00:22,  2.16it/s]
+2023-07-08 16:27:54,583:INFO:Creating metrics dataframe
+2023-07-08 16:27:54,723:WARNING:Processing:  42%|###########7                | 34/81 [00:12<00:18,  2.56it/s]
+2023-07-08 16:27:54,724:INFO:Uploading results into container
+2023-07-08 16:27:54,724:INFO:Uploading model into container now
+2023-07-08 16:27:54,725:INFO:_master_model_container: 8
+2023-07-08 16:27:54,725:INFO:_display_container: 2
+2023-07-08 16:27:54,725:INFO:BayesianRidge()
+2023-07-08 16:27:54,725:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:54,831:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:54,831:INFO:Creating metrics dataframe
+2023-07-08 16:27:54,834:INFO:Initializing Passive Aggressive Regressor
+2023-07-08 16:27:54,835:INFO:Total runtime is 0.20519977013270058 minutes
+2023-07-08 16:27:54,835:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:54,835:INFO:Initializing create_model()
+2023-07-08 16:27:54,835:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:54,835:INFO:Checking exceptions
+2023-07-08 16:27:54,835:INFO:Importing libraries
+2023-07-08 16:27:54,835:INFO:Copying training dataset
+2023-07-08 16:27:54,842:WARNING:Processing:  43%|############                | 35/81 [00:12<00:14,  3.09it/s]
+2023-07-08 16:27:54,843:INFO:Defining folds
+2023-07-08 16:27:54,843:INFO:Declaring metric variables
+2023-07-08 16:27:54,843:INFO:Importing untrained model
+2023-07-08 16:27:54,844:INFO:Passive Aggressive Regressor Imported successfully
+2023-07-08 16:27:54,844:INFO:Starting cross validation
+2023-07-08 16:27:54,845:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:56,285:INFO:Calculating mean and std
+2023-07-08 16:27:56,286:WARNING:Processing:  46%|############7               | 37/81 [00:13<00:21,  2.05it/s]
+2023-07-08 16:27:56,286:INFO:Creating metrics dataframe
+2023-07-08 16:27:56,418:WARNING:Processing:  47%|#############1              | 38/81 [00:13<00:17,  2.46it/s]
+2023-07-08 16:27:56,418:INFO:Uploading results into container
+2023-07-08 16:27:56,419:INFO:Uploading model into container now
+2023-07-08 16:27:56,420:INFO:_master_model_container: 9
+2023-07-08 16:27:56,420:INFO:_display_container: 2
+2023-07-08 16:27:56,420:INFO:PassiveAggressiveRegressor(random_state=6855)
+2023-07-08 16:27:56,420:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:56,536:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:56,536:INFO:Creating metrics dataframe
+2023-07-08 16:27:56,540:INFO:Initializing Huber Regressor
+2023-07-08 16:27:56,540:INFO:Total runtime is 0.23360368808110551 minutes
+2023-07-08 16:27:56,540:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:56,540:INFO:Initializing create_model()
+2023-07-08 16:27:56,540:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:56,540:INFO:Checking exceptions
+2023-07-08 16:27:56,540:INFO:Importing libraries
+2023-07-08 16:27:56,541:INFO:Copying training dataset
+2023-07-08 16:27:56,549:WARNING:Processing:  48%|#############4              | 39/81 [00:14<00:14,  2.95it/s]
+2023-07-08 16:27:56,549:INFO:Defining folds
+2023-07-08 16:27:56,549:INFO:Declaring metric variables
+2023-07-08 16:27:56,549:INFO:Importing untrained model
+2023-07-08 16:27:56,550:INFO:Huber Regressor Imported successfully
+2023-07-08 16:27:56,550:INFO:Starting cross validation
+2023-07-08 16:27:56,551:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:56,720:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,742:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,752:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,786:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,801:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,813:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,820:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:56,846:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:57,172:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:57,178:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-07-08 16:27:58,049:INFO:Calculating mean and std
+2023-07-08 16:27:58,050:WARNING:Processing:  51%|##############1             | 41/81 [00:15<00:20,  1.97it/s]
+2023-07-08 16:27:58,050:INFO:Creating metrics dataframe
+2023-07-08 16:27:58,185:WARNING:Processing:  52%|##############5             | 42/81 [00:15<00:16,  2.36it/s]
+2023-07-08 16:27:58,185:INFO:Uploading results into container
+2023-07-08 16:27:58,186:INFO:Uploading model into container now
+2023-07-08 16:27:58,187:INFO:_master_model_container: 10
+2023-07-08 16:27:58,187:INFO:_display_container: 2
+2023-07-08 16:27:58,187:INFO:HuberRegressor()
+2023-07-08 16:27:58,187:INFO:create_model() successfully completed......................................
+2023-07-08 16:27:58,303:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:27:58,303:INFO:Creating metrics dataframe
+2023-07-08 16:27:58,308:INFO:Initializing K Neighbors Regressor
+2023-07-08 16:27:58,308:INFO:Total runtime is 0.2630759557088216 minutes
+2023-07-08 16:27:58,308:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:27:58,309:INFO:Initializing create_model()
+2023-07-08 16:27:58,309:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:27:58,309:INFO:Checking exceptions
+2023-07-08 16:27:58,309:INFO:Importing libraries
+2023-07-08 16:27:58,309:INFO:Copying training dataset
+2023-07-08 16:27:58,315:WARNING:Processing:  53%|##############8             | 43/81 [00:15<00:13,  2.84it/s]
+2023-07-08 16:27:58,315:INFO:Defining folds
+2023-07-08 16:27:58,315:INFO:Declaring metric variables
+2023-07-08 16:27:58,316:INFO:Importing untrained model
+2023-07-08 16:27:58,316:INFO:K Neighbors Regressor Imported successfully
+2023-07-08 16:27:58,316:INFO:Starting cross validation
+2023-07-08 16:27:58,317:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:27:59,751:INFO:Calculating mean and std
+2023-07-08 16:27:59,752:WARNING:Processing:  56%|###############5            | 45/81 [00:17<00:18,  1.99it/s]
+2023-07-08 16:27:59,752:INFO:Creating metrics dataframe
+2023-07-08 16:27:59,897:WARNING:Processing:  57%|###############9            | 46/81 [00:17<00:14,  2.37it/s]
+2023-07-08 16:27:59,897:INFO:Uploading results into container
+2023-07-08 16:27:59,898:INFO:Uploading model into container now
+2023-07-08 16:27:59,898:INFO:_master_model_container: 11
+2023-07-08 16:27:59,898:INFO:_display_container: 2
+2023-07-08 16:27:59,899:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-07-08 16:27:59,899:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:00,016:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:00,016:INFO:Creating metrics dataframe
+2023-07-08 16:28:00,021:INFO:Initializing Decision Tree Regressor
+2023-07-08 16:28:00,022:INFO:Total runtime is 0.2916263302167256 minutes
+2023-07-08 16:28:00,022:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:00,022:INFO:Initializing create_model()
+2023-07-08 16:28:00,022:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:00,022:INFO:Checking exceptions
+2023-07-08 16:28:00,023:INFO:Importing libraries
+2023-07-08 16:28:00,023:INFO:Copying training dataset
+2023-07-08 16:28:00,034:WARNING:Processing:  58%|################2           | 47/81 [00:17<00:11,  2.85it/s]
+2023-07-08 16:28:00,034:INFO:Defining folds
+2023-07-08 16:28:00,034:INFO:Declaring metric variables
+2023-07-08 16:28:00,034:INFO:Importing untrained model
+2023-07-08 16:28:00,035:INFO:Decision Tree Regressor Imported successfully
+2023-07-08 16:28:00,035:INFO:Starting cross validation
+2023-07-08 16:28:00,036:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:01,470:INFO:Calculating mean and std
+2023-07-08 16:28:01,471:WARNING:Processing:  60%|################9           | 49/81 [00:18<00:16,  1.99it/s]
+2023-07-08 16:28:01,472:INFO:Creating metrics dataframe
+2023-07-08 16:28:01,610:WARNING:Processing:  62%|#################2          | 50/81 [00:19<00:13,  2.38it/s]
+2023-07-08 16:28:01,610:INFO:Uploading results into container
+2023-07-08 16:28:01,611:INFO:Uploading model into container now
+2023-07-08 16:28:01,612:INFO:_master_model_container: 12
+2023-07-08 16:28:01,612:INFO:_display_container: 2
+2023-07-08 16:28:01,612:INFO:DecisionTreeRegressor(random_state=6855)
+2023-07-08 16:28:01,612:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:01,718:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:01,718:INFO:Creating metrics dataframe
+2023-07-08 16:28:01,722:INFO:Initializing Random Forest Regressor
+2023-07-08 16:28:01,722:INFO:Total runtime is 0.31998302539189655 minutes
+2023-07-08 16:28:01,739:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:01,739:INFO:Initializing create_model()
+2023-07-08 16:28:01,739:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:01,739:INFO:Checking exceptions
+2023-07-08 16:28:01,740:INFO:Importing libraries
+2023-07-08 16:28:01,740:INFO:Copying training dataset
+2023-07-08 16:28:01,747:WARNING:Processing:  63%|#################6          | 51/81 [00:19<00:10,  2.85it/s]
+2023-07-08 16:28:01,747:INFO:Defining folds
+2023-07-08 16:28:01,747:INFO:Declaring metric variables
+2023-07-08 16:28:01,747:INFO:Importing untrained model
+2023-07-08 16:28:01,748:INFO:Random Forest Regressor Imported successfully
+2023-07-08 16:28:01,748:INFO:Starting cross validation
+2023-07-08 16:28:01,749:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:04,727:INFO:Calculating mean and std
+2023-07-08 16:28:04,728:WARNING:Processing:  65%|##################3         | 53/81 [00:22<00:22,  1.22it/s]
+2023-07-08 16:28:04,728:INFO:Creating metrics dataframe
+2023-07-08 16:28:04,893:WARNING:Processing:  67%|##################6         | 54/81 [00:22<00:18,  1.49it/s]
+2023-07-08 16:28:04,893:INFO:Uploading results into container
+2023-07-08 16:28:04,894:INFO:Uploading model into container now
+2023-07-08 16:28:04,895:INFO:_master_model_container: 13
+2023-07-08 16:28:04,895:INFO:_display_container: 2
+2023-07-08 16:28:04,895:INFO:RandomForestRegressor(n_jobs=-1, random_state=6855)
+2023-07-08 16:28:04,896:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:05,012:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:05,012:INFO:Creating metrics dataframe
+2023-07-08 16:28:05,017:INFO:Initializing Extra Trees Regressor
+2023-07-08 16:28:05,017:INFO:Total runtime is 0.3748988032341003 minutes
+2023-07-08 16:28:05,017:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:05,018:INFO:Initializing create_model()
+2023-07-08 16:28:05,018:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:05,018:INFO:Checking exceptions
+2023-07-08 16:28:05,018:INFO:Importing libraries
+2023-07-08 16:28:05,018:INFO:Copying training dataset
+2023-07-08 16:28:05,024:WARNING:Processing:  68%|###################         | 55/81 [00:22<00:14,  1.86it/s]
+2023-07-08 16:28:05,024:INFO:Defining folds
+2023-07-08 16:28:05,024:INFO:Declaring metric variables
+2023-07-08 16:28:05,024:INFO:Importing untrained model
+2023-07-08 16:28:05,025:INFO:Extra Trees Regressor Imported successfully
+2023-07-08 16:28:05,025:INFO:Starting cross validation
+2023-07-08 16:28:05,026:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:07,455:INFO:Calculating mean and std
+2023-07-08 16:28:07,457:WARNING:Processing:  70%|###################7        | 57/81 [00:24<00:19,  1.22it/s]
+2023-07-08 16:28:07,457:INFO:Creating metrics dataframe
+2023-07-08 16:28:07,619:WARNING:Processing:  72%|####################        | 58/81 [00:25<00:15,  1.49it/s]
+2023-07-08 16:28:07,619:INFO:Uploading results into container
+2023-07-08 16:28:07,620:INFO:Uploading model into container now
+2023-07-08 16:28:07,621:INFO:_master_model_container: 14
+2023-07-08 16:28:07,621:INFO:_display_container: 2
+2023-07-08 16:28:07,621:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=6855)
+2023-07-08 16:28:07,621:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:07,731:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:07,731:INFO:Creating metrics dataframe
+2023-07-08 16:28:07,734:INFO:Initializing AdaBoost Regressor
+2023-07-08 16:28:07,734:INFO:Total runtime is 0.42017187277475987 minutes
+2023-07-08 16:28:07,735:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:07,735:INFO:Initializing create_model()
+2023-07-08 16:28:07,735:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:07,735:INFO:Checking exceptions
+2023-07-08 16:28:07,735:INFO:Importing libraries
+2023-07-08 16:28:07,735:INFO:Copying training dataset
+2023-07-08 16:28:07,742:WARNING:Processing:  73%|####################3       | 59/81 [00:25<00:11,  1.87it/s]
+2023-07-08 16:28:07,742:INFO:Defining folds
+2023-07-08 16:28:07,742:INFO:Declaring metric variables
+2023-07-08 16:28:07,743:INFO:Importing untrained model
+2023-07-08 16:28:07,743:INFO:AdaBoost Regressor Imported successfully
+2023-07-08 16:28:07,743:INFO:Starting cross validation
+2023-07-08 16:28:07,745:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:09,820:INFO:Calculating mean and std
+2023-07-08 16:28:09,821:WARNING:Processing:  75%|#####################       | 61/81 [00:27<00:14,  1.35it/s]
+2023-07-08 16:28:09,821:INFO:Creating metrics dataframe
+2023-07-08 16:28:09,975:WARNING:Processing:  77%|#####################4      | 62/81 [00:27<00:11,  1.64it/s]
+2023-07-08 16:28:09,975:INFO:Uploading results into container
+2023-07-08 16:28:09,976:INFO:Uploading model into container now
+2023-07-08 16:28:09,976:INFO:_master_model_container: 15
+2023-07-08 16:28:09,976:INFO:_display_container: 2
+2023-07-08 16:28:09,977:INFO:AdaBoostRegressor(random_state=6855)
+2023-07-08 16:28:09,977:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:10,091:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:10,091:INFO:Creating metrics dataframe
+2023-07-08 16:28:10,095:INFO:Initializing Gradient Boosting Regressor
+2023-07-08 16:28:10,095:INFO:Total runtime is 0.4595225135485331 minutes
+2023-07-08 16:28:10,095:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:10,095:INFO:Initializing create_model()
+2023-07-08 16:28:10,095:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:10,095:INFO:Checking exceptions
+2023-07-08 16:28:10,095:INFO:Importing libraries
+2023-07-08 16:28:10,095:INFO:Copying training dataset
+2023-07-08 16:28:10,100:WARNING:Processing:  78%|#####################7      | 63/81 [00:27<00:08,  2.04it/s]
+2023-07-08 16:28:10,100:INFO:Defining folds
+2023-07-08 16:28:10,100:INFO:Declaring metric variables
+2023-07-08 16:28:10,101:INFO:Importing untrained model
+2023-07-08 16:28:10,101:INFO:Gradient Boosting Regressor Imported successfully
+2023-07-08 16:28:10,101:INFO:Starting cross validation
+2023-07-08 16:28:10,102:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:12,338:INFO:Calculating mean and std
+2023-07-08 16:28:12,339:WARNING:Processing:  80%|######################4     | 65/81 [00:29<00:11,  1.33it/s]
+2023-07-08 16:28:12,339:INFO:Creating metrics dataframe
+2023-07-08 16:28:12,485:WARNING:Processing:  81%|######################8     | 66/81 [00:29<00:09,  1.63it/s]
+2023-07-08 16:28:12,485:INFO:Uploading results into container
+2023-07-08 16:28:12,485:INFO:Uploading model into container now
+2023-07-08 16:28:12,486:INFO:_master_model_container: 16
+2023-07-08 16:28:12,486:INFO:_display_container: 2
+2023-07-08 16:28:12,486:INFO:GradientBoostingRegressor(random_state=6855)
+2023-07-08 16:28:12,486:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:12,588:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:12,588:INFO:Creating metrics dataframe
+2023-07-08 16:28:12,591:INFO:Initializing Extreme Gradient Boosting
+2023-07-08 16:28:12,591:INFO:Total runtime is 0.5011275609334309 minutes
+2023-07-08 16:28:12,591:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:12,591:INFO:Initializing create_model()
+2023-07-08 16:28:12,591:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=xgboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:12,591:INFO:Checking exceptions
+2023-07-08 16:28:12,592:INFO:Importing libraries
+2023-07-08 16:28:12,592:INFO:Copying training dataset
+2023-07-08 16:28:12,597:WARNING:Processing:  83%|#######################1    | 67/81 [00:30<00:06,  2.04it/s]
+2023-07-08 16:28:12,597:INFO:Defining folds
+2023-07-08 16:28:12,597:INFO:Declaring metric variables
+2023-07-08 16:28:12,598:INFO:Importing untrained model
+2023-07-08 16:28:12,598:INFO:Extreme Gradient Boosting Imported successfully
+2023-07-08 16:28:12,598:INFO:Starting cross validation
+2023-07-08 16:28:12,599:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:14,584:INFO:Calculating mean and std
+2023-07-08 16:28:14,585:WARNING:Processing:  85%|#######################8    | 69/81 [00:32<00:08,  1.43it/s]
+2023-07-08 16:28:14,585:INFO:Creating metrics dataframe
+2023-07-08 16:28:14,740:WARNING:Processing:  86%|########################1   | 70/81 [00:32<00:06,  1.74it/s]
+2023-07-08 16:28:14,740:INFO:Uploading results into container
+2023-07-08 16:28:14,741:INFO:Uploading model into container now
+2023-07-08 16:28:14,741:INFO:_master_model_container: 17
+2023-07-08 16:28:14,741:INFO:_display_container: 2
+2023-07-08 16:28:14,742:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=6855, ...)
+2023-07-08 16:28:14,742:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:14,846:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:14,846:INFO:Creating metrics dataframe
+2023-07-08 16:28:14,849:INFO:Initializing Light Gradient Boosting Machine
+2023-07-08 16:28:14,849:INFO:Total runtime is 0.5387598633766174 minutes
+2023-07-08 16:28:14,849:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:14,850:INFO:Initializing create_model()
+2023-07-08 16:28:14,850:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:14,850:INFO:Checking exceptions
+2023-07-08 16:28:14,850:INFO:Importing libraries
+2023-07-08 16:28:14,850:INFO:Copying training dataset
+2023-07-08 16:28:14,856:WARNING:Processing:  88%|########################5   | 71/81 [00:32<00:04,  2.17it/s]
+2023-07-08 16:28:14,857:INFO:Defining folds
+2023-07-08 16:28:14,857:INFO:Declaring metric variables
+2023-07-08 16:28:14,857:INFO:Importing untrained model
+2023-07-08 16:28:14,857:INFO:Light Gradient Boosting Machine Imported successfully
+2023-07-08 16:28:14,858:INFO:Starting cross validation
+2023-07-08 16:28:14,858:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:16,665:INFO:Calculating mean and std
+2023-07-08 16:28:16,666:WARNING:Processing:  90%|#########################2  | 73/81 [00:34<00:05,  1.55it/s]
+2023-07-08 16:28:16,666:INFO:Creating metrics dataframe
+2023-07-08 16:28:16,840:WARNING:Processing:  91%|#########################5  | 74/81 [00:34<00:03,  1.86it/s]
+2023-07-08 16:28:16,841:INFO:Uploading results into container
+2023-07-08 16:28:16,841:INFO:Uploading model into container now
+2023-07-08 16:28:16,842:INFO:_master_model_container: 18
+2023-07-08 16:28:16,842:INFO:_display_container: 2
+2023-07-08 16:28:16,843:INFO:LGBMRegressor(random_state=6855)
+2023-07-08 16:28:16,843:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:16,960:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:16,960:INFO:Creating metrics dataframe
+2023-07-08 16:28:16,963:INFO:Initializing Dummy Regressor
+2023-07-08 16:28:16,963:INFO:Total runtime is 0.5739930907885233 minutes
+2023-07-08 16:28:16,964:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:28:16,964:INFO:Initializing create_model()
+2023-07-08 16:28:16,964:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE94C6D30>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:16,964:INFO:Checking exceptions
+2023-07-08 16:28:16,964:INFO:Importing libraries
+2023-07-08 16:28:16,964:INFO:Copying training dataset
+2023-07-08 16:28:16,970:WARNING:Processing:  93%|#########################9  | 75/81 [00:34<00:02,  2.29it/s]
+2023-07-08 16:28:16,970:INFO:Defining folds
+2023-07-08 16:28:16,970:INFO:Declaring metric variables
+2023-07-08 16:28:16,970:INFO:Importing untrained model
+2023-07-08 16:28:16,971:INFO:Dummy Regressor Imported successfully
+2023-07-08 16:28:16,971:INFO:Starting cross validation
+2023-07-08 16:28:16,972:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-08 16:28:18,640:INFO:Calculating mean and std
+2023-07-08 16:28:18,641:WARNING:Processing:  95%|##########################6 | 77/81 [00:36<00:02,  1.66it/s]
+2023-07-08 16:28:18,641:INFO:Creating metrics dataframe
+2023-07-08 16:28:18,801:WARNING:Processing:  96%|##########################9 | 78/81 [00:36<00:01,  2.00it/s]
+2023-07-08 16:28:18,801:INFO:Uploading results into container
+2023-07-08 16:28:18,802:INFO:Uploading model into container now
+2023-07-08 16:28:18,802:INFO:_master_model_container: 19
+2023-07-08 16:28:18,803:INFO:_display_container: 2
+2023-07-08 16:28:18,803:INFO:DummyRegressor()
+2023-07-08 16:28:18,803:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:18,909:INFO:SubProcess create_model() end ==================================
+2023-07-08 16:28:18,909:INFO:Creating metrics dataframe
+2023-07-08 16:28:18,913:WARNING:Processing:  98%|###########################3| 79/81 [00:36<00:00,  2.46it/s]
+2023-07-08 16:28:18,915:INFO:Initializing create_model()
+2023-07-08 16:28:18,915:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE1A39E20>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=6855), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:28:18,915:INFO:Checking exceptions
+2023-07-08 16:28:18,916:INFO:Importing libraries
+2023-07-08 16:28:18,917:INFO:Copying training dataset
+2023-07-08 16:28:18,923:INFO:Defining folds
+2023-07-08 16:28:18,923:INFO:Declaring metric variables
+2023-07-08 16:28:18,924:INFO:Importing untrained model
+2023-07-08 16:28:18,924:INFO:Declaring custom model
+2023-07-08 16:28:18,925:INFO:Extra Trees Regressor Imported successfully
+2023-07-08 16:28:18,926:INFO:Cross validation set to False
+2023-07-08 16:28:18,926:INFO:Fitting Model
+2023-07-08 16:28:19,339:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=6855)
+2023-07-08 16:28:19,339:INFO:create_model() successfully completed......................................
+2023-07-08 16:28:19,444:WARNING:Processing: 100%|############################| 81/81 [00:36<00:00,  2.87it/s]
+2023-07-08 16:28:19,444:WARNING:                                                                             
+2023-07-08 16:28:19,465:INFO:                                    Model     MAE     MSE    RMSE      R2  \
+2023-07-08 16:28:19,465:INFO:et                  Extra Trees Regressor  0.4205  0.3690  0.6037  0.4418   
+2023-07-08 16:28:19,465:INFO:rf                Random Forest Regressor  0.4521  0.3733  0.6077  0.4328   
+2023-07-08 16:28:19,465:INFO:lightgbm  Light Gradient Boosting Machine  0.4690  0.3943  0.6253  0.3975   
+2023-07-08 16:28:19,465:INFO:ada                    AdaBoost Regressor  0.5215  0.4223  0.6461  0.3570   
+2023-07-08 16:28:19,465:INFO:gbr           Gradient Boosting Regressor  0.5035  0.4218  0.6474  0.3543   
+2023-07-08 16:28:19,465:INFO:xgboost         Extreme Gradient Boosting  0.4526  0.4262  0.6508  0.3416   
+2023-07-08 16:28:19,466:INFO:ridge                    Ridge Regression  0.5162  0.4386  0.6588  0.3337   
+2023-07-08 16:28:19,466:INFO:br                         Bayesian Ridge  0.5164  0.4391  0.6592  0.3328   
+2023-07-08 16:28:19,466:INFO:lr                      Linear Regression  0.5165  0.4396  0.6597  0.3312   
+2023-07-08 16:28:19,466:INFO:lar                Least Angle Regression  0.5165  0.4397  0.6597  0.3311   
+2023-07-08 16:28:19,466:INFO:huber                     Huber Regressor  0.5181  0.4494  0.6665  0.3193   
+2023-07-08 16:28:19,466:INFO:knn                 K Neighbors Regressor  0.6147  0.6352  0.7927  0.0390   
+2023-07-08 16:28:19,466:INFO:en                            Elastic Net  0.6553  0.6441  0.7984  0.0282   
+2023-07-08 16:28:19,466:INFO:omp           Orthogonal Matching Pursuit  0.6529  0.6452  0.7991  0.0265   
+2023-07-08 16:28:19,466:INFO:lasso                    Lasso Regression  0.6603  0.6462  0.7998  0.0246   
+2023-07-08 16:28:19,466:INFO:llar         Lasso Least Angle Regression  0.6603  0.6462  0.7998  0.0246   
+2023-07-08 16:28:19,466:INFO:dummy                     Dummy Regressor  0.6879  0.6662  0.8127 -0.0079   
+2023-07-08 16:28:19,466:INFO:dt                Decision Tree Regressor  0.5345  0.7258  0.8454 -0.1111   
+2023-07-08 16:28:19,466:INFO:par          Passive Aggressive Regressor  0.7727  1.0839  0.9860 -0.7983   
+2023-07-08 16:28:19,466:INFO:
+2023-07-08 16:28:19,466:INFO:           RMSLE    MAPE  TT (Sec)  
+2023-07-08 16:28:19,466:INFO:et        0.0935  0.0779     0.243  
+2023-07-08 16:28:19,466:INFO:rf        0.0940  0.0834     0.298  
+2023-07-08 16:28:19,466:INFO:lightgbm  0.0966  0.0861     0.181  
+2023-07-08 16:28:19,466:INFO:ada       0.0995  0.0959     0.208  
+2023-07-08 16:28:19,466:INFO:gbr       0.0997  0.0923     0.224  
+2023-07-08 16:28:19,466:INFO:xgboost   0.1003  0.0832     0.199  
+2023-07-08 16:28:19,467:INFO:ridge     0.1013  0.0947     0.139  
+2023-07-08 16:28:19,467:INFO:br        0.1014  0.0948     0.134  
+2023-07-08 16:28:19,467:INFO:lr        0.1015  0.0948     0.133  
+2023-07-08 16:28:19,467:INFO:lar       0.1015  0.0948     0.122  
+2023-07-08 16:28:19,467:INFO:huber     0.1028  0.0955     0.150  
+2023-07-08 16:28:19,467:INFO:knn       0.1210  0.1124     0.143  
+2023-07-08 16:28:19,467:INFO:en        0.1220  0.1206     0.122  
+2023-07-08 16:28:19,467:INFO:omp       0.1221  0.1202     0.138  
+2023-07-08 16:28:19,467:INFO:lasso     0.1221  0.1215     0.125  
+2023-07-08 16:28:19,467:INFO:llar      0.1221  0.1215     0.122  
+2023-07-08 16:28:19,467:INFO:dummy     0.1239  0.1263     0.167  
+2023-07-08 16:28:19,467:INFO:dt        0.1312  0.0977     0.143  
+2023-07-08 16:28:19,467:INFO:par       0.1459  0.1449     0.144  
+2023-07-08 16:28:19,467:INFO:_master_model_container: 19
+2023-07-08 16:28:19,467:INFO:_display_container: 2
+2023-07-08 16:28:19,468:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=6855)
+2023-07-08 16:28:19,468:INFO:compare_models() successfully completed......................................
+2023-07-08 16:28:19,476:INFO:Initializing save_model()
+2023-07-08 16:28:19,476:INFO:save_model(model=ExtraTreesRegressor(n_jobs=-1, random_state=6855), model_name=best_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\imvee\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH', 'sulphates', 'alcohol'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2023-07-08 16:28:19,476:INFO:Adding model into prep_pipe
+2023-07-08 16:28:19,546:INFO:Transformation Pipeline and Model Successfully Saved
+2023-07-08 16:28:19,546:INFO:best_model.pkl saved in current working directory
+2023-07-08 16:28:19,553:INFO:Pipeline(memory=FastMemory(location=C:\Users\imvee\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH', 'sulphates', 'alcohol'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=6855))])
+2023-07-08 16:28:19,553:INFO:save_model() successfully completed......................................
+2023-07-08 16:30:29,739:INFO:Sourcedata
+2023-07-08 16:30:38,631:INFO:Sourcedata
+2023-07-08 16:30:42,773:INFO:Sourcedata
+2023-07-08 16:30:42,802:WARNING:
+2023-07-08 16:30:42,802:WARNING:Summarize dataset:   0%|                               | 0/5 [00:00<?, ?it/s]
+2023-07-08 16:30:42,864:WARNING:Summarize dataset:   0%| | 0/17 [00:00<?, ?it/s, Describe variable:fixed acid
+2023-07-08 16:30:42,883:WARNING:Summarize dataset:   6%| | 1/17 [00:00<00:01, 12.42it/s, Describe variable:ch
+2023-07-08 16:30:42,907:WARNING:Summarize dataset:  12%|1| 2/17 [00:00<00:00, 19.14it/s, Describe variable:ci
+2023-07-08 16:30:42,910:WARNING:Summarize dataset:  18%|1| 3/17 [00:00<00:00, 28.16it/s, Describe variable:ci
+2023-07-08 16:30:42,912:WARNING:Summarize dataset:  18%|1| 3/17 [00:00<00:00, 28.16it/s, Describe variable:fr
+2023-07-08 16:30:42,919:WARNING:Summarize dataset:  24%|2| 4/17 [00:00<00:00, 28.16it/s, Describe variable:to
+2023-07-08 16:30:42,921:WARNING:Summarize dataset:  29%|2| 5/17 [00:00<00:00, 28.16it/s, Describe variable:de
+2023-07-08 16:30:42,921:WARNING:Summarize dataset:  35%|3| 6/17 [00:00<00:00, 28.16it/s, Describe variable:su
+2023-07-08 16:30:42,923:WARNING:Summarize dataset:  41%|4| 7/17 [00:00<00:00, 28.16it/s, Describe variable:vo
+2023-07-08 16:30:42,924:WARNING:Summarize dataset:  47%|4| 8/17 [00:00<00:00, 28.16it/s, Describe variable:re
+2023-07-08 16:30:42,925:WARNING:Summarize dataset:  53%|5| 9/17 [00:00<00:00, 28.16it/s, Describe variable:al
+2023-07-08 16:30:42,931:WARNING:Summarize dataset:  59%|5| 10/17 [00:00<00:00, 28.16it/s, Describe variable:q
+2023-07-08 16:30:42,931:WARNING:Summarize dataset:  65%|6| 11/17 [00:00<00:00, 28.16it/s, Describe variable:p
+2023-07-08 16:30:42,932:WARNING:Summarize dataset:  71%|7| 12/17 [00:00<00:00, 28.16it/s, Get variable types]
+2023-07-08 16:30:42,932:WARNING:Summarize dataset:  72%|7| 13/18 [00:00<00:00, 28.16it/s, Get dataframe stati
+2023-07-08 16:30:42,935:WARNING:Summarize dataset:  74%|7| 14/19 [00:00<00:00, 28.16it/s, Calculate auto corr
+2023-07-08 16:30:43,083:WARNING:Summarize dataset:  79%|7| 15/19 [00:00<00:00, 56.72it/s, Calculate auto corr
+2023-07-08 16:30:43,084:WARNING:Summarize dataset:  79%|7| 15/19 [00:00<00:00, 56.72it/s, Get scatter matrix]
+2023-07-08 16:30:43,084:WARNING:Summarize dataset:   9%| | 15/163 [00:00<00:02, 56.72it/s, scatter fixed acid
+2023-07-08 16:30:43,229:WARNING:Summarize dataset:  10%| | 16/163 [00:00<00:02, 56.72it/s, scatter volatile a
+2023-07-08 16:30:43,412:WARNING:Summarize dataset:  10%|1| 17/163 [00:00<00:02, 56.72it/s, scatter citric aci
+2023-07-08 16:30:43,561:WARNING:Summarize dataset:  11%|1| 18/163 [00:00<00:02, 56.72it/s, scatter residual s
+2023-07-08 16:30:43,728:WARNING:Summarize dataset:  12%|1| 19/163 [00:00<00:02, 56.72it/s, scatter chlorides,
+2023-07-08 16:30:43,877:WARNING:Summarize dataset:  12%|1| 20/163 [00:01<00:02, 56.72it/s, scatter free sulfu
+2023-07-08 16:30:44,024:WARNING:Summarize dataset:  13%|1| 21/163 [00:01<00:09, 14.24it/s, scatter free sulfu
+2023-07-08 16:30:44,024:WARNING:Summarize dataset:  13%|1| 21/163 [00:01<00:09, 14.24it/s, scatter total sulf
+2023-07-08 16:30:44,161:WARNING:Summarize dataset:  13%|1| 22/163 [00:01<00:09, 14.24it/s, scatter density, f
+2023-07-08 16:30:44,305:WARNING:Summarize dataset:  14%|1| 23/163 [00:01<00:09, 14.24it/s, scatter pH, fixed 
+2023-07-08 16:30:44,440:WARNING:Summarize dataset:  15%|1| 24/163 [00:01<00:09, 14.24it/s, scatter sulphates,
+2023-07-08 16:30:44,576:WARNING:Summarize dataset:  15%|1| 25/163 [00:01<00:12, 11.34it/s, scatter sulphates,
+2023-07-08 16:30:44,576:WARNING:Summarize dataset:  15%|1| 25/163 [00:01<00:12, 11.34it/s, scatter alcohol, f
+2023-07-08 16:30:44,708:WARNING:Summarize dataset:  16%|1| 26/163 [00:01<00:12, 11.34it/s, scatter quality, f
+2023-07-08 16:30:44,832:WARNING:Summarize dataset:  17%|1| 27/163 [00:02<00:11, 11.34it/s, scatter fixed acid
+2023-07-08 16:30:44,963:WARNING:Summarize dataset:  17%|1| 28/163 [00:02<00:13, 10.30it/s, scatter fixed acid
+2023-07-08 16:30:44,963:WARNING:Summarize dataset:  17%|1| 28/163 [00:02<00:13, 10.30it/s, scatter volatile a
+2023-07-08 16:30:45,109:WARNING:Summarize dataset:  18%|1| 29/163 [00:02<00:13, 10.30it/s, scatter citric aci
+2023-07-08 16:30:45,243:WARNING:Summarize dataset:  18%|1| 30/163 [00:02<00:13,  9.55it/s, scatter citric aci
+2023-07-08 16:30:45,243:WARNING:Summarize dataset:  18%|1| 30/163 [00:02<00:13,  9.55it/s, scatter residual s
+2023-07-08 16:30:45,387:WARNING:Summarize dataset:  19%|1| 31/163 [00:02<00:13,  9.55it/s, scatter chlorides,
+2023-07-08 16:30:45,528:WARNING:Summarize dataset:  20%|1| 32/163 [00:02<00:14,  8.91it/s, scatter chlorides,
+2023-07-08 16:30:45,529:WARNING:Summarize dataset:  20%|1| 32/163 [00:02<00:14,  8.91it/s, scatter free sulfu
+2023-07-08 16:30:45,680:WARNING:Summarize dataset:  20%|2| 33/163 [00:02<00:14,  8.91it/s, scatter total sulf
+2023-07-08 16:30:45,829:WARNING:Summarize dataset:  21%|2| 34/163 [00:03<00:15,  8.29it/s, scatter total sulf
+2023-07-08 16:30:45,829:WARNING:Summarize dataset:  21%|2| 34/163 [00:03<00:15,  8.29it/s, scatter density, v
+2023-07-08 16:30:45,978:WARNING:Summarize dataset:  21%|2| 35/163 [00:03<00:15,  8.03it/s, scatter density, v
+2023-07-08 16:30:45,978:WARNING:Summarize dataset:  21%|2| 35/163 [00:03<00:15,  8.03it/s, scatter pH, volati
+2023-07-08 16:30:46,119:WARNING:Summarize dataset:  22%|2| 36/163 [00:03<00:16,  7.86it/s, scatter pH, volati
+2023-07-08 16:30:46,119:WARNING:Summarize dataset:  22%|2| 36/163 [00:03<00:16,  7.86it/s, scatter sulphates,
+2023-07-08 16:30:46,269:WARNING:Summarize dataset:  23%|2| 37/163 [00:03<00:16,  7.61it/s, scatter sulphates,
+2023-07-08 16:30:46,269:WARNING:Summarize dataset:  23%|2| 37/163 [00:03<00:16,  7.61it/s, scatter alcohol, v
+2023-07-08 16:30:46,591:WARNING:Summarize dataset:  23%|2| 38/163 [00:03<00:21,  5.81it/s, scatter alcohol, v
+2023-07-08 16:30:46,591:WARNING:Summarize dataset:  23%|2| 38/163 [00:03<00:21,  5.81it/s, scatter quality, v
+2023-07-08 16:30:46,727:WARNING:Summarize dataset:  24%|2| 39/163 [00:03<00:20,  6.11it/s, scatter quality, v
+2023-07-08 16:30:46,728:WARNING:Summarize dataset:  24%|2| 39/163 [00:03<00:20,  6.11it/s, scatter fixed acid
+2023-07-08 16:30:46,857:WARNING:Summarize dataset:  25%|2| 40/163 [00:04<00:19,  6.45it/s, scatter fixed acid
+2023-07-08 16:30:46,857:WARNING:Summarize dataset:  25%|2| 40/163 [00:04<00:19,  6.45it/s, scatter volatile a
+2023-07-08 16:30:46,997:WARNING:Summarize dataset:  25%|2| 41/163 [00:04<00:18,  6.61it/s, scatter volatile a
+2023-07-08 16:30:46,998:WARNING:Summarize dataset:  25%|2| 41/163 [00:04<00:18,  6.61it/s, scatter citric aci
+2023-07-08 16:30:47,133:WARNING:Summarize dataset:  26%|2| 42/163 [00:04<00:17,  6.79it/s, scatter citric aci
+2023-07-08 16:30:47,133:WARNING:Summarize dataset:  26%|2| 42/163 [00:04<00:17,  6.79it/s, scatter residual s
+2023-07-08 16:30:47,263:WARNING:Summarize dataset:  26%|2| 43/163 [00:04<00:17,  7.02it/s, scatter residual s
+2023-07-08 16:30:47,263:WARNING:Summarize dataset:  26%|2| 43/163 [00:04<00:17,  7.02it/s, scatter chlorides,
+2023-07-08 16:30:47,397:WARNING:Summarize dataset:  27%|2| 44/163 [00:04<00:16,  7.15it/s, scatter chlorides,
+2023-07-08 16:30:47,397:WARNING:Summarize dataset:  27%|2| 44/163 [00:04<00:16,  7.15it/s, scatter free sulfu
+2023-07-08 16:30:47,531:WARNING:Summarize dataset:  28%|2| 45/163 [00:04<00:16,  7.23it/s, scatter free sulfu
+2023-07-08 16:30:47,531:WARNING:Summarize dataset:  28%|2| 45/163 [00:04<00:16,  7.23it/s, scatter total sulf
+2023-07-08 16:30:47,666:WARNING:Summarize dataset:  28%|2| 46/163 [00:04<00:16,  7.28it/s, scatter total sulf
+2023-07-08 16:30:47,726:WARNING:Summarize dataset:  28%|2| 46/163 [00:04<00:16,  7.28it/s, scatter density, c
+2023-07-08 16:30:47,865:WARNING:Summarize dataset:  29%|2| 47/163 [00:05<00:17,  6.45it/s, scatter density, c
+2023-07-08 16:30:47,865:WARNING:Summarize dataset:  29%|2| 47/163 [00:05<00:17,  6.45it/s, scatter pH, citric
+2023-07-08 16:30:47,994:WARNING:Summarize dataset:  29%|2| 48/163 [00:05<00:16,  6.77it/s, scatter pH, citric
+2023-07-08 16:30:47,994:WARNING:Summarize dataset:  29%|2| 48/163 [00:05<00:16,  6.77it/s, scatter sulphates,
+2023-07-08 16:30:48,137:WARNING:Summarize dataset:  30%|3| 49/163 [00:05<00:16,  6.83it/s, scatter sulphates,
+2023-07-08 16:30:48,137:WARNING:Summarize dataset:  30%|3| 49/163 [00:05<00:16,  6.83it/s, scatter alcohol, c
+2023-07-08 16:30:48,265:WARNING:Summarize dataset:  31%|3| 50/163 [00:05<00:15,  7.09it/s, scatter alcohol, c
+2023-07-08 16:30:48,266:WARNING:Summarize dataset:  31%|3| 50/163 [00:05<00:15,  7.09it/s, scatter quality, c
+2023-07-08 16:30:48,393:WARNING:Summarize dataset:  31%|3| 51/163 [00:05<00:15,  7.30it/s, scatter quality, c
+2023-07-08 16:30:48,393:WARNING:Summarize dataset:  31%|3| 51/163 [00:05<00:15,  7.30it/s, scatter fixed acid
+2023-07-08 16:30:48,526:WARNING:Summarize dataset:  32%|3| 52/163 [00:05<00:15,  7.36it/s, scatter fixed acid
+2023-07-08 16:30:48,526:WARNING:Summarize dataset:  32%|3| 52/163 [00:05<00:15,  7.36it/s, scatter volatile a
+2023-07-08 16:30:48,675:WARNING:Summarize dataset:  33%|3| 53/163 [00:05<00:15,  7.18it/s, scatter volatile a
+2023-07-08 16:30:48,675:WARNING:Summarize dataset:  33%|3| 53/163 [00:05<00:15,  7.18it/s, scatter citric aci
+2023-07-08 16:30:48,810:WARNING:Summarize dataset:  33%|3| 54/163 [00:06<00:15,  7.22it/s, scatter citric aci
+2023-07-08 16:30:48,810:WARNING:Summarize dataset:  33%|3| 54/163 [00:06<00:15,  7.22it/s, scatter residual s
+2023-07-08 16:30:48,946:WARNING:Summarize dataset:  34%|3| 55/163 [00:06<00:14,  7.26it/s, scatter residual s
+2023-07-08 16:30:48,946:WARNING:Summarize dataset:  34%|3| 55/163 [00:06<00:14,  7.26it/s, scatter chlorides,
+2023-07-08 16:30:49,089:WARNING:Summarize dataset:  34%|3| 56/163 [00:06<00:14,  7.19it/s, scatter chlorides,
+2023-07-08 16:30:49,089:WARNING:Summarize dataset:  34%|3| 56/163 [00:06<00:14,  7.19it/s, scatter free sulfu
+2023-07-08 16:30:49,233:WARNING:Summarize dataset:  35%|3| 57/163 [00:06<00:14,  7.10it/s, scatter free sulfu
+2023-07-08 16:30:49,233:WARNING:Summarize dataset:  35%|3| 57/163 [00:06<00:14,  7.10it/s, scatter total sulf
+2023-07-08 16:30:49,367:WARNING:Summarize dataset:  36%|3| 58/163 [00:06<00:14,  7.21it/s, scatter total sulf
+2023-07-08 16:30:49,368:WARNING:Summarize dataset:  36%|3| 58/163 [00:06<00:14,  7.21it/s, scatter density, r
+2023-07-08 16:30:49,506:WARNING:Summarize dataset:  36%|3| 59/163 [00:06<00:14,  7.20it/s, scatter density, r
+2023-07-08 16:30:49,506:WARNING:Summarize dataset:  36%|3| 59/163 [00:06<00:14,  7.20it/s, scatter pH, residu
+2023-07-08 16:30:49,648:WARNING:Summarize dataset:  37%|3| 60/163 [00:06<00:14,  7.15it/s, scatter pH, residu
+2023-07-08 16:30:49,648:WARNING:Summarize dataset:  37%|3| 60/163 [00:06<00:14,  7.15it/s, scatter sulphates,
+2023-07-08 16:30:49,972:WARNING:Summarize dataset:  37%|3| 61/163 [00:07<00:19,  5.13it/s, scatter sulphates,
+2023-07-08 16:30:49,973:WARNING:Summarize dataset:  37%|3| 61/163 [00:07<00:19,  5.13it/s, scatter alcohol, r
+2023-07-08 16:30:50,105:WARNING:Summarize dataset:  38%|3| 62/163 [00:07<00:17,  5.67it/s, scatter alcohol, r
+2023-07-08 16:30:50,105:WARNING:Summarize dataset:  38%|3| 62/163 [00:07<00:17,  5.67it/s, scatter quality, r
+2023-07-08 16:30:50,235:WARNING:Summarize dataset:  39%|3| 63/163 [00:07<00:16,  6.15it/s, scatter quality, r
+2023-07-08 16:30:50,236:WARNING:Summarize dataset:  39%|3| 63/163 [00:07<00:16,  6.15it/s, scatter fixed acid
+2023-07-08 16:30:50,369:WARNING:Summarize dataset:  39%|3| 64/163 [00:07<00:15,  6.50it/s, scatter fixed acid
+2023-07-08 16:30:50,370:WARNING:Summarize dataset:  39%|3| 64/163 [00:07<00:15,  6.50it/s, scatter volatile a
+2023-07-08 16:30:50,515:WARNING:Summarize dataset:  40%|3| 65/163 [00:07<00:14,  6.61it/s, scatter volatile a
+2023-07-08 16:30:50,515:WARNING:Summarize dataset:  40%|3| 65/163 [00:07<00:14,  6.61it/s, scatter citric aci
+2023-07-08 16:30:50,642:WARNING:Summarize dataset:  40%|4| 66/163 [00:07<00:13,  6.94it/s, scatter citric aci
+2023-07-08 16:30:50,642:WARNING:Summarize dataset:  40%|4| 66/163 [00:07<00:13,  6.94it/s, scatter residual s
+2023-07-08 16:30:50,783:WARNING:Summarize dataset:  41%|4| 67/163 [00:07<00:13,  6.98it/s, scatter residual s
+2023-07-08 16:30:50,784:WARNING:Summarize dataset:  41%|4| 67/163 [00:07<00:13,  6.98it/s, scatter chlorides,
+2023-07-08 16:30:50,914:WARNING:Summarize dataset:  42%|4| 68/163 [00:08<00:13,  7.16it/s, scatter chlorides,
+2023-07-08 16:30:50,914:WARNING:Summarize dataset:  42%|4| 68/163 [00:08<00:13,  7.16it/s, scatter free sulfu
+2023-07-08 16:30:51,049:WARNING:Summarize dataset:  42%|4| 69/163 [00:08<00:13,  7.23it/s, scatter free sulfu
+2023-07-08 16:30:51,050:WARNING:Summarize dataset:  42%|4| 69/163 [00:08<00:13,  7.23it/s, scatter total sulf
+2023-07-08 16:30:51,190:WARNING:Summarize dataset:  43%|4| 70/163 [00:08<00:12,  7.18it/s, scatter total sulf
+2023-07-08 16:30:51,191:WARNING:Summarize dataset:  43%|4| 70/163 [00:08<00:12,  7.18it/s, scatter density, c
+2023-07-08 16:30:51,336:WARNING:Summarize dataset:  44%|4| 71/163 [00:08<00:12,  7.09it/s, scatter density, c
+2023-07-08 16:30:51,337:WARNING:Summarize dataset:  44%|4| 71/163 [00:08<00:12,  7.09it/s, scatter pH, chlori
+2023-07-08 16:30:51,483:WARNING:Summarize dataset:  44%|4| 72/163 [00:08<00:13,  7.00it/s, scatter pH, chlori
+2023-07-08 16:30:51,483:WARNING:Summarize dataset:  44%|4| 72/163 [00:08<00:13,  7.00it/s, scatter sulphates,
+2023-07-08 16:30:51,632:WARNING:Summarize dataset:  45%|4| 73/163 [00:08<00:12,  6.93it/s, scatter sulphates,
+2023-07-08 16:30:51,632:WARNING:Summarize dataset:  45%|4| 73/163 [00:08<00:12,  6.93it/s, scatter alcohol, c
+2023-07-08 16:30:51,766:WARNING:Summarize dataset:  45%|4| 74/163 [00:08<00:12,  7.07it/s, scatter alcohol, c
+2023-07-08 16:30:51,766:WARNING:Summarize dataset:  45%|4| 74/163 [00:08<00:12,  7.07it/s, scatter quality, c
+2023-07-08 16:30:51,894:WARNING:Summarize dataset:  46%|4| 75/163 [00:09<00:12,  7.27it/s, scatter quality, c
+2023-07-08 16:30:51,894:WARNING:Summarize dataset:  46%|4| 75/163 [00:09<00:12,  7.27it/s, scatter fixed acid
+2023-07-08 16:30:52,037:WARNING:Summarize dataset:  47%|4| 76/163 [00:09<00:12,  7.19it/s, scatter fixed acid
+2023-07-08 16:30:52,037:WARNING:Summarize dataset:  47%|4| 76/163 [00:09<00:12,  7.19it/s, scatter volatile a
+2023-07-08 16:30:52,184:WARNING:Summarize dataset:  47%|4| 77/163 [00:09<00:12,  7.07it/s, scatter volatile a
+2023-07-08 16:30:52,184:WARNING:Summarize dataset:  47%|4| 77/163 [00:09<00:12,  7.07it/s, scatter citric aci
+2023-07-08 16:30:52,322:WARNING:Summarize dataset:  48%|4| 78/163 [00:09<00:11,  7.13it/s, scatter citric aci
+2023-07-08 16:30:52,322:WARNING:Summarize dataset:  48%|4| 78/163 [00:09<00:11,  7.13it/s, scatter residual s
+2023-07-08 16:30:52,461:WARNING:Summarize dataset:  48%|4| 79/163 [00:09<00:11,  7.13it/s, scatter residual s
+2023-07-08 16:30:52,461:WARNING:Summarize dataset:  48%|4| 79/163 [00:09<00:11,  7.13it/s, scatter chlorides,
+2023-07-08 16:30:52,600:WARNING:Summarize dataset:  49%|4| 80/163 [00:09<00:11,  7.16it/s, scatter chlorides,
+2023-07-08 16:30:52,600:WARNING:Summarize dataset:  49%|4| 80/163 [00:09<00:11,  7.16it/s, scatter free sulfu
+2023-07-08 16:30:52,742:WARNING:Summarize dataset:  50%|4| 81/163 [00:09<00:11,  7.12it/s, scatter free sulfu
+2023-07-08 16:30:52,742:WARNING:Summarize dataset:  50%|4| 81/163 [00:09<00:11,  7.12it/s, scatter total sulf
+2023-07-08 16:30:52,886:WARNING:Summarize dataset:  50%|5| 82/163 [00:10<00:11,  7.06it/s, scatter total sulf
+2023-07-08 16:30:52,886:WARNING:Summarize dataset:  50%|5| 82/163 [00:10<00:11,  7.06it/s, scatter density, f
+2023-07-08 16:30:53,041:WARNING:Summarize dataset:  51%|5| 83/163 [00:10<00:11,  6.87it/s, scatter density, f
+2023-07-08 16:30:53,041:WARNING:Summarize dataset:  51%|5| 83/163 [00:10<00:11,  6.87it/s, scatter pH, free s
+2023-07-08 16:30:53,369:WARNING:Summarize dataset:  52%|5| 84/163 [00:10<00:15,  4.99it/s, scatter pH, free s
+2023-07-08 16:30:53,369:WARNING:Summarize dataset:  52%|5| 84/163 [00:10<00:15,  4.99it/s, scatter sulphates,
+2023-07-08 16:30:53,513:WARNING:Summarize dataset:  52%|5| 85/163 [00:10<00:14,  5.45it/s, scatter sulphates,
+2023-07-08 16:30:53,514:WARNING:Summarize dataset:  52%|5| 85/163 [00:10<00:14,  5.45it/s, scatter alcohol, f
+2023-07-08 16:30:53,648:WARNING:Summarize dataset:  53%|5| 86/163 [00:10<00:13,  5.92it/s, scatter alcohol, f
+2023-07-08 16:30:53,649:WARNING:Summarize dataset:  53%|5| 86/163 [00:10<00:13,  5.92it/s, scatter quality, f
+2023-07-08 16:30:53,779:WARNING:Summarize dataset:  53%|5| 87/163 [00:10<00:11,  6.35it/s, scatter quality, f
+2023-07-08 16:30:53,779:WARNING:Summarize dataset:  53%|5| 87/163 [00:10<00:11,  6.35it/s, scatter fixed acid
+2023-07-08 16:30:53,911:WARNING:Summarize dataset:  54%|5| 88/163 [00:11<00:11,  6.67it/s, scatter fixed acid
+2023-07-08 16:30:53,912:WARNING:Summarize dataset:  54%|5| 88/163 [00:11<00:11,  6.67it/s, scatter volatile a
+2023-07-08 16:30:54,058:WARNING:Summarize dataset:  55%|5| 89/163 [00:11<00:11,  6.71it/s, scatter volatile a
+2023-07-08 16:30:54,058:WARNING:Summarize dataset:  55%|5| 89/163 [00:11<00:11,  6.71it/s, scatter citric aci
+2023-07-08 16:30:54,188:WARNING:Summarize dataset:  55%|5| 90/163 [00:11<00:10,  6.98it/s, scatter citric aci
+2023-07-08 16:30:54,188:WARNING:Summarize dataset:  55%|5| 90/163 [00:11<00:10,  6.98it/s, scatter residual s
+2023-07-08 16:30:54,328:WARNING:Summarize dataset:  56%|5| 91/163 [00:11<00:10,  7.02it/s, scatter residual s
+2023-07-08 16:30:54,328:WARNING:Summarize dataset:  56%|5| 91/163 [00:11<00:10,  7.02it/s, scatter chlorides,
+2023-07-08 16:30:54,459:WARNING:Summarize dataset:  56%|5| 92/163 [00:11<00:09,  7.19it/s, scatter chlorides,
+2023-07-08 16:30:54,459:WARNING:Summarize dataset:  56%|5| 92/163 [00:11<00:09,  7.19it/s, scatter free sulfu
+2023-07-08 16:30:54,597:WARNING:Summarize dataset:  57%|5| 93/163 [00:11<00:09,  7.22it/s, scatter free sulfu
+2023-07-08 16:30:54,598:WARNING:Summarize dataset:  57%|5| 93/163 [00:11<00:09,  7.22it/s, scatter total sulf
+2023-07-08 16:30:54,739:WARNING:Summarize dataset:  58%|5| 94/163 [00:11<00:09,  7.16it/s, scatter total sulf
+2023-07-08 16:30:54,739:WARNING:Summarize dataset:  58%|5| 94/163 [00:11<00:09,  7.16it/s, scatter density, t
+2023-07-08 16:30:54,887:WARNING:Summarize dataset:  58%|5| 95/163 [00:12<00:09,  7.03it/s, scatter density, t
+2023-07-08 16:30:54,888:WARNING:Summarize dataset:  58%|5| 95/163 [00:12<00:09,  7.03it/s, scatter pH, total 
+2023-07-08 16:30:55,022:WARNING:Summarize dataset:  59%|5| 96/163 [00:12<00:09,  7.15it/s, scatter pH, total 
+2023-07-08 16:30:55,023:WARNING:Summarize dataset:  59%|5| 96/163 [00:12<00:09,  7.15it/s, scatter sulphates,
+2023-07-08 16:30:55,170:WARNING:Summarize dataset:  60%|5| 97/163 [00:12<00:09,  7.02it/s, scatter sulphates,
+2023-07-08 16:30:55,171:WARNING:Summarize dataset:  60%|5| 97/163 [00:12<00:09,  7.02it/s, scatter alcohol, t
+2023-07-08 16:30:55,314:WARNING:Summarize dataset:  60%|6| 98/163 [00:12<00:09,  7.01it/s, scatter alcohol, t
+2023-07-08 16:30:55,314:WARNING:Summarize dataset:  60%|6| 98/163 [00:12<00:09,  7.01it/s, scatter quality, t
+2023-07-08 16:30:55,442:WARNING:Summarize dataset:  61%|6| 99/163 [00:12<00:08,  7.21it/s, scatter quality, t
+2023-07-08 16:30:55,442:WARNING:Summarize dataset:  61%|6| 99/163 [00:12<00:08,  7.21it/s, scatter fixed acid
+2023-07-08 16:30:55,580:WARNING:Summarize dataset:  61%|6| 100/163 [00:12<00:08,  7.23it/s, scatter fixed aci
+2023-07-08 16:30:55,580:WARNING:Summarize dataset:  61%|6| 100/163 [00:12<00:08,  7.23it/s, scatter volatile 
+2023-07-08 16:30:55,732:WARNING:Summarize dataset:  62%|6| 101/163 [00:12<00:08,  7.03it/s, scatter volatile 
+2023-07-08 16:30:55,733:WARNING:Summarize dataset:  62%|6| 101/163 [00:12<00:08,  7.03it/s, scatter citric ac
+2023-07-08 16:30:55,867:WARNING:Summarize dataset:  63%|6| 102/163 [00:13<00:08,  7.14it/s, scatter citric ac
+2023-07-08 16:30:55,868:WARNING:Summarize dataset:  63%|6| 102/163 [00:13<00:08,  7.14it/s, scatter residual 
+2023-07-08 16:30:56,006:WARNING:Summarize dataset:  63%|6| 103/163 [00:13<00:08,  7.15it/s, scatter residual 
+2023-07-08 16:30:56,006:WARNING:Summarize dataset:  63%|6| 103/163 [00:13<00:08,  7.15it/s, scatter chlorides
+2023-07-08 16:30:56,157:WARNING:Summarize dataset:  64%|6| 104/163 [00:13<00:08,  6.98it/s, scatter chlorides
+2023-07-08 16:30:56,157:WARNING:Summarize dataset:  64%|6| 104/163 [00:13<00:08,  6.98it/s, scatter free sulf
+2023-07-08 16:30:56,299:WARNING:Summarize dataset:  64%|6| 105/163 [00:13<00:08,  7.01it/s, scatter free sulf
+2023-07-08 16:30:56,299:WARNING:Summarize dataset:  64%|6| 105/163 [00:13<00:08,  7.01it/s, scatter total sul
+2023-07-08 16:30:56,440:WARNING:Summarize dataset:  65%|6| 106/163 [00:13<00:08,  7.03it/s, scatter total sul
+2023-07-08 16:30:56,440:WARNING:Summarize dataset:  65%|6| 106/163 [00:13<00:08,  7.03it/s, scatter density, 
+2023-07-08 16:30:56,770:WARNING:Summarize dataset:  66%|6| 107/163 [00:13<00:11,  5.03it/s, scatter density, 
+2023-07-08 16:30:56,771:WARNING:Summarize dataset:  66%|6| 107/163 [00:13<00:11,  5.03it/s, scatter pH, densi
+2023-07-08 16:30:56,909:WARNING:Summarize dataset:  66%|6| 108/163 [00:14<00:09,  5.54it/s, scatter pH, densi
+2023-07-08 16:30:56,909:WARNING:Summarize dataset:  66%|6| 108/163 [00:14<00:09,  5.54it/s, scatter sulphates
+2023-07-08 16:30:57,055:WARNING:Summarize dataset:  67%|6| 109/163 [00:14<00:09,  5.88it/s, scatter sulphates
+2023-07-08 16:30:57,055:WARNING:Summarize dataset:  67%|6| 109/163 [00:14<00:09,  5.88it/s, scatter alcohol, 
+2023-07-08 16:30:57,195:WARNING:Summarize dataset:  67%|6| 110/163 [00:14<00:08,  6.19it/s, scatter alcohol, 
+2023-07-08 16:30:57,195:WARNING:Summarize dataset:  67%|6| 110/163 [00:14<00:08,  6.19it/s, scatter quality, 
+2023-07-08 16:30:57,326:WARNING:Summarize dataset:  68%|6| 111/163 [00:14<00:07,  6.57it/s, scatter quality, 
+2023-07-08 16:30:57,326:WARNING:Summarize dataset:  68%|6| 111/163 [00:14<00:07,  6.57it/s, scatter fixed aci
+2023-07-08 16:30:57,457:WARNING:Summarize dataset:  69%|6| 112/163 [00:14<00:07,  6.86it/s, scatter fixed aci
+2023-07-08 16:30:57,457:WARNING:Summarize dataset:  69%|6| 112/163 [00:14<00:07,  6.86it/s, scatter volatile 
+2023-07-08 16:30:57,600:WARNING:Summarize dataset:  69%|6| 113/163 [00:14<00:07,  6.89it/s, scatter volatile 
+2023-07-08 16:30:57,600:WARNING:Summarize dataset:  69%|6| 113/163 [00:14<00:07,  6.89it/s, scatter citric ac
+2023-07-08 16:30:57,731:WARNING:Summarize dataset:  70%|6| 114/163 [00:14<00:06,  7.10it/s, scatter citric ac
+2023-07-08 16:30:57,731:WARNING:Summarize dataset:  70%|6| 114/163 [00:14<00:06,  7.10it/s, scatter residual 
+2023-07-08 16:30:57,864:WARNING:Summarize dataset:  71%|7| 115/163 [00:15<00:06,  7.22it/s, scatter residual 
+2023-07-08 16:30:57,865:WARNING:Summarize dataset:  71%|7| 115/163 [00:15<00:06,  7.22it/s, scatter chlorides
+2023-07-08 16:30:57,999:WARNING:Summarize dataset:  71%|7| 116/163 [00:15<00:06,  7.30it/s, scatter chlorides
+2023-07-08 16:30:57,999:WARNING:Summarize dataset:  71%|7| 116/163 [00:15<00:06,  7.30it/s, scatter free sulf
+2023-07-08 16:30:58,136:WARNING:Summarize dataset:  72%|7| 117/163 [00:15<00:06,  7.27it/s, scatter free sulf
+2023-07-08 16:30:58,136:WARNING:Summarize dataset:  72%|7| 117/163 [00:15<00:06,  7.27it/s, scatter total sul
+2023-07-08 16:30:58,272:WARNING:Summarize dataset:  72%|7| 118/163 [00:15<00:06,  7.30it/s, scatter total sul
+2023-07-08 16:30:58,272:WARNING:Summarize dataset:  72%|7| 118/163 [00:15<00:06,  7.30it/s, scatter density, 
+2023-07-08 16:30:58,415:WARNING:Summarize dataset:  73%|7| 119/163 [00:15<00:06,  7.21it/s, scatter density, 
+2023-07-08 16:30:58,415:WARNING:Summarize dataset:  73%|##1| 119/163 [00:15<00:06,  7.21it/s, scatter pH, pH]
+2023-07-08 16:30:58,548:WARNING:Summarize dataset:  74%|##2| 120/163 [00:15<00:05,  7.30it/s, scatter pH, pH]
+2023-07-08 16:30:58,549:WARNING:Summarize dataset:  74%|7| 120/163 [00:15<00:05,  7.30it/s, scatter sulphates
+2023-07-08 16:30:58,684:WARNING:Summarize dataset:  74%|7| 121/163 [00:15<00:05,  7.31it/s, scatter sulphates
+2023-07-08 16:30:58,685:WARNING:Summarize dataset:  74%|7| 121/163 [00:15<00:05,  7.31it/s, scatter alcohol, 
+2023-07-08 16:30:58,824:WARNING:Summarize dataset:  75%|7| 122/163 [00:16<00:05,  7.28it/s, scatter alcohol, 
+2023-07-08 16:30:58,824:WARNING:Summarize dataset:  75%|7| 122/163 [00:16<00:05,  7.28it/s, scatter quality, 
+2023-07-08 16:30:58,956:WARNING:Summarize dataset:  75%|7| 123/163 [00:16<00:05,  7.35it/s, scatter quality, 
+2023-07-08 16:30:58,956:WARNING:Summarize dataset:  75%|7| 123/163 [00:16<00:05,  7.35it/s, scatter fixed aci
+2023-07-08 16:30:59,100:WARNING:Summarize dataset:  76%|7| 124/163 [00:16<00:05,  7.22it/s, scatter fixed aci
+2023-07-08 16:30:59,101:WARNING:Summarize dataset:  76%|7| 124/163 [00:16<00:05,  7.22it/s, scatter volatile 
+2023-07-08 16:30:59,263:WARNING:Summarize dataset:  77%|7| 125/163 [00:16<00:05,  6.88it/s, scatter volatile 
+2023-07-08 16:30:59,263:WARNING:Summarize dataset:  77%|7| 125/163 [00:16<00:05,  6.88it/s, scatter citric ac
+2023-07-08 16:30:59,404:WARNING:Summarize dataset:  77%|7| 126/163 [00:16<00:05,  6.92it/s, scatter citric ac
+2023-07-08 16:30:59,404:WARNING:Summarize dataset:  77%|7| 126/163 [00:16<00:05,  6.92it/s, scatter residual 
+2023-07-08 16:30:59,544:WARNING:Summarize dataset:  78%|7| 127/163 [00:16<00:05,  6.99it/s, scatter residual 
+2023-07-08 16:30:59,544:WARNING:Summarize dataset:  78%|7| 127/163 [00:16<00:05,  6.99it/s, scatter chlorides
+2023-07-08 16:30:59,701:WARNING:Summarize dataset:  79%|7| 128/163 [00:16<00:05,  6.80it/s, scatter chlorides
+2023-07-08 16:30:59,701:WARNING:Summarize dataset:  79%|7| 128/163 [00:16<00:05,  6.80it/s, scatter free sulf
+2023-07-08 16:30:59,841:WARNING:Summarize dataset:  79%|7| 129/163 [00:17<00:04,  6.89it/s, scatter free sulf
+2023-07-08 16:30:59,841:WARNING:Summarize dataset:  79%|7| 129/163 [00:17<00:04,  6.89it/s, scatter total sul
+2023-07-08 16:31:00,167:WARNING:Summarize dataset:  80%|7| 130/163 [00:17<00:06,  5.02it/s, scatter total sul
+2023-07-08 16:31:00,167:WARNING:Summarize dataset:  80%|7| 130/163 [00:17<00:06,  5.02it/s, scatter density, 
+2023-07-08 16:31:00,314:WARNING:Summarize dataset:  80%|8| 131/163 [00:17<00:05,  5.44it/s, scatter density, 
+2023-07-08 16:31:00,315:WARNING:Summarize dataset:  80%|8| 131/163 [00:17<00:05,  5.44it/s, scatter pH, sulph
+2023-07-08 16:31:00,457:WARNING:Summarize dataset:  81%|8| 132/163 [00:17<00:05,  5.83it/s, scatter pH, sulph
+2023-07-08 16:31:00,457:WARNING:Summarize dataset:  81%|8| 132/163 [00:17<00:05,  5.83it/s, scatter sulphates
+2023-07-08 16:31:00,599:WARNING:Summarize dataset:  82%|8| 133/163 [00:17<00:04,  6.15it/s, scatter sulphates
+2023-07-08 16:31:00,599:WARNING:Summarize dataset:  82%|8| 133/163 [00:17<00:04,  6.15it/s, scatter alcohol, 
+2023-07-08 16:31:00,744:WARNING:Summarize dataset:  82%|8| 134/163 [00:17<00:04,  6.36it/s, scatter alcohol, 
+2023-07-08 16:31:00,745:WARNING:Summarize dataset:  82%|8| 134/163 [00:17<00:04,  6.36it/s, scatter quality, 
+2023-07-08 16:31:00,881:WARNING:Summarize dataset:  83%|8| 135/163 [00:18<00:04,  6.61it/s, scatter quality, 
+2023-07-08 16:31:00,882:WARNING:Summarize dataset:  83%|8| 135/163 [00:18<00:04,  6.61it/s, scatter fixed aci
+2023-07-08 16:31:01,018:WARNING:Summarize dataset:  83%|8| 136/163 [00:18<00:03,  6.80it/s, scatter fixed aci
+2023-07-08 16:31:01,019:WARNING:Summarize dataset:  83%|8| 136/163 [00:18<00:03,  6.80it/s, scatter volatile 
+2023-07-08 16:31:01,157:WARNING:Summarize dataset:  84%|8| 137/163 [00:18<00:03,  6.91it/s, scatter volatile 
+2023-07-08 16:31:01,157:WARNING:Summarize dataset:  84%|8| 137/163 [00:18<00:03,  6.91it/s, scatter citric ac
+2023-07-08 16:31:01,291:WARNING:Summarize dataset:  85%|8| 138/163 [00:18<00:03,  7.09it/s, scatter citric ac
+2023-07-08 16:31:01,291:WARNING:Summarize dataset:  85%|8| 138/163 [00:18<00:03,  7.09it/s, scatter residual 
+2023-07-08 16:31:01,430:WARNING:Summarize dataset:  85%|8| 139/163 [00:18<00:03,  7.10it/s, scatter residual 
+2023-07-08 16:31:01,431:WARNING:Summarize dataset:  85%|8| 139/163 [00:18<00:03,  7.10it/s, scatter chlorides
+2023-07-08 16:31:01,567:WARNING:Summarize dataset:  86%|8| 140/163 [00:18<00:03,  7.16it/s, scatter chlorides
+2023-07-08 16:31:01,567:WARNING:Summarize dataset:  86%|8| 140/163 [00:18<00:03,  7.16it/s, scatter free sulf
+2023-07-08 16:31:01,705:WARNING:Summarize dataset:  87%|8| 141/163 [00:18<00:03,  7.21it/s, scatter free sulf
+2023-07-08 16:31:01,705:WARNING:Summarize dataset:  87%|8| 141/163 [00:18<00:03,  7.21it/s, scatter total sul
+2023-07-08 16:31:01,839:WARNING:Summarize dataset:  87%|8| 142/163 [00:19<00:02,  7.26it/s, scatter total sul
+2023-07-08 16:31:01,840:WARNING:Summarize dataset:  87%|8| 142/163 [00:19<00:02,  7.26it/s, scatter density, 
+2023-07-08 16:31:01,979:WARNING:Summarize dataset:  88%|8| 143/163 [00:19<00:02,  7.22it/s, scatter density, 
+2023-07-08 16:31:01,979:WARNING:Summarize dataset:  88%|8| 143/163 [00:19<00:02,  7.22it/s, scatter pH, alcoh
+2023-07-08 16:31:02,116:WARNING:Summarize dataset:  88%|8| 144/163 [00:19<00:02,  7.25it/s, scatter pH, alcoh
+2023-07-08 16:31:02,117:WARNING:Summarize dataset:  88%|8| 144/163 [00:19<00:02,  7.25it/s, scatter sulphates
+2023-07-08 16:31:02,263:WARNING:Summarize dataset:  89%|8| 145/163 [00:19<00:02,  7.11it/s, scatter sulphates
+2023-07-08 16:31:02,263:WARNING:Summarize dataset:  89%|8| 145/163 [00:19<00:02,  7.11it/s, scatter alcohol, 
+2023-07-08 16:31:02,402:WARNING:Summarize dataset:  90%|8| 146/163 [00:19<00:02,  7.13it/s, scatter alcohol, 
+2023-07-08 16:31:02,403:WARNING:Summarize dataset:  90%|8| 146/163 [00:19<00:02,  7.13it/s, scatter quality, 
+2023-07-08 16:31:02,531:WARNING:Summarize dataset:  90%|9| 147/163 [00:19<00:02,  7.31it/s, scatter quality, 
+2023-07-08 16:31:02,532:WARNING:Summarize dataset:  90%|9| 147/163 [00:19<00:02,  7.31it/s, scatter fixed aci
+2023-07-08 16:31:02,659:WARNING:Summarize dataset:  91%|9| 148/163 [00:19<00:02,  7.46it/s, scatter fixed aci
+2023-07-08 16:31:02,659:WARNING:Summarize dataset:  91%|9| 148/163 [00:19<00:02,  7.46it/s, scatter volatile 
+2023-07-08 16:31:02,801:WARNING:Summarize dataset:  91%|9| 149/163 [00:19<00:01,  7.32it/s, scatter volatile 
+2023-07-08 16:31:02,801:WARNING:Summarize dataset:  91%|9| 149/163 [00:19<00:01,  7.32it/s, scatter citric ac
+2023-07-08 16:31:02,932:WARNING:Summarize dataset:  92%|9| 150/163 [00:20<00:01,  7.42it/s, scatter citric ac
+2023-07-08 16:31:02,932:WARNING:Summarize dataset:  92%|9| 150/163 [00:20<00:01,  7.42it/s, scatter residual 
+2023-07-08 16:31:03,062:WARNING:Summarize dataset:  93%|9| 151/163 [00:20<00:01,  7.50it/s, scatter residual 
+2023-07-08 16:31:03,062:WARNING:Summarize dataset:  93%|9| 151/163 [00:20<00:01,  7.50it/s, scatter chlorides
+2023-07-08 16:31:03,189:WARNING:Summarize dataset:  93%|9| 152/163 [00:20<00:01,  7.60it/s, scatter chlorides
+2023-07-08 16:31:03,189:WARNING:Summarize dataset:  93%|9| 152/163 [00:20<00:01,  7.60it/s, scatter free sulf
+2023-07-08 16:31:03,505:WARNING:Summarize dataset:  94%|9| 153/163 [00:20<00:01,  5.35it/s, scatter free sulf
+2023-07-08 16:31:03,506:WARNING:Summarize dataset:  94%|9| 153/163 [00:20<00:01,  5.35it/s, scatter total sul
+2023-07-08 16:31:03,629:WARNING:Summarize dataset:  94%|9| 154/163 [00:20<00:01,  5.95it/s, scatter total sul
+2023-07-08 16:31:03,630:WARNING:Summarize dataset:  94%|9| 154/163 [00:20<00:01,  5.95it/s, scatter density, 
+2023-07-08 16:31:03,773:WARNING:Summarize dataset:  95%|9| 155/163 [00:20<00:01,  6.22it/s, scatter density, 
+2023-07-08 16:31:03,773:WARNING:Summarize dataset:  95%|9| 155/163 [00:20<00:01,  6.22it/s, scatter pH, quali
+2023-07-08 16:31:03,906:WARNING:Summarize dataset:  96%|9| 156/163 [00:21<00:01,  6.56it/s, scatter pH, quali
+2023-07-08 16:31:03,906:WARNING:Summarize dataset:  96%|9| 156/163 [00:21<00:01,  6.56it/s, scatter sulphates
+2023-07-08 16:31:04,042:WARNING:Summarize dataset:  96%|9| 157/163 [00:21<00:00,  6.80it/s, scatter sulphates
+2023-07-08 16:31:04,042:WARNING:Summarize dataset:  96%|9| 157/163 [00:21<00:00,  6.80it/s, scatter alcohol, 
+2023-07-08 16:31:04,169:WARNING:Summarize dataset:  97%|9| 158/163 [00:21<00:00,  7.07it/s, scatter alcohol, 
+2023-07-08 16:31:04,170:WARNING:Summarize dataset:  97%|9| 158/163 [00:21<00:00,  7.07it/s, scatter quality, 
+2023-07-08 16:31:04,300:WARNING:Summarize dataset:  98%|9| 159/163 [00:21<00:00,  7.22it/s, scatter quality, 
+2023-07-08 16:31:04,300:WARNING:Summarize dataset:  96%|9| 159/165 [00:21<00:00,  7.22it/s, Missing diagram b
+2023-07-08 16:31:04,575:WARNING:Summarize dataset:  97%|9| 160/165 [00:21<00:00,  5.58it/s, Missing diagram b
+2023-07-08 16:31:04,576:WARNING:Summarize dataset:  97%|9| 160/165 [00:21<00:00,  5.58it/s, Missing diagram m
+2023-07-08 16:31:04,701:WARNING:Summarize dataset:  98%|9| 161/165 [00:21<00:00,  6.12it/s, Missing diagram m
+2023-07-08 16:31:04,702:WARNING:Summarize dataset:  98%|#####8| 161/165 [00:21<00:00,  6.12it/s, Take sample]
+2023-07-08 16:31:04,702:WARNING:Summarize dataset:  98%|9| 162/165 [00:21<00:00,  6.12it/s, Detecting duplica
+2023-07-08 16:31:04,711:WARNING:Summarize dataset:  99%|######9| 163/165 [00:21<00:00,  6.12it/s, Get alerts]
+2023-07-08 16:31:04,712:WARNING:Summarize dataset:  99%|9| 164/165 [00:21<00:00,  6.12it/s, Get reproduction 
+2023-07-08 16:31:04,713:WARNING:Summarize dataset: 100%|########| 165/165 [00:21<00:00,  6.12it/s, Completed]
+2023-07-08 16:31:04,714:WARNING:Summarize dataset: 100%|########| 165/165 [00:21<00:00,  7.53it/s, Completed]
+2023-07-08 16:31:04,714:WARNING:
+2023-07-08 16:31:04,715:WARNING:Generate report structure:   0%|                       | 0/1 [00:00<?, ?it/s]
+2023-07-08 16:31:09,131:WARNING:Generate report structure: 100%|###############| 1/1 [00:04<00:00,  4.41s/it]
+2023-07-08 16:31:09,131:WARNING:Generate report structure: 100%|###############| 1/1 [00:04<00:00,  4.42s/it]
+2023-07-08 16:31:09,131:WARNING:
+2023-07-08 16:31:09,132:WARNING:Render HTML:   0%|                                     | 0/1 [00:00<?, ?it/s]
+2023-07-08 16:31:13,726:WARNING:Render HTML: 100%|#############################| 1/1 [00:04<00:00,  4.59s/it]
+2023-07-08 16:31:13,726:WARNING:Render HTML: 100%|#############################| 1/1 [00:04<00:00,  4.59s/it]
+2023-07-08 16:31:13,726:WARNING:
+2023-07-08 16:31:34,357:INFO:Sourcedata
+2023-07-08 16:31:40,479:INFO:Sourcedata
+2023-07-08 16:31:42,256:INFO:Sourcedata
+2023-07-08 16:31:42,628:INFO:PyCaret RegressionExperiment
+2023-07-08 16:31:42,628:INFO:Logging name: reg-default-name
+2023-07-08 16:31:42,628:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-07-08 16:31:42,628:INFO:version 3.0.4
+2023-07-08 16:31:42,628:INFO:Initializing setup()
+2023-07-08 16:31:42,629:INFO:self.USI: aa75
+2023-07-08 16:31:42,629:INFO:self._variable_keys: {'gpu_param', 'seed', 'pipeline', 'exp_name_log', 'fold_groups_param', 'exp_id', 'logging_param', 'X_train', 'n_jobs_param', 'idx', 'fold_generator', 'X', '_available_plots', 'X_test', 'USI', 'target_param', 'fold_shuffle_param', 'transform_target_param', 'gpu_n_jobs_param', 'data', '_ml_usecase', 'html_param', 'y_train', 'log_plots_param', 'y', 'y_test', 'memory'}
+2023-07-08 16:31:42,629:INFO:Checking environment
+2023-07-08 16:31:42,629:INFO:python_version: 3.9.13
+2023-07-08 16:31:42,630:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-07-08 16:31:42,630:INFO:machine: AMD64
+2023-07-08 16:31:42,630:INFO:platform: Windows-10-10.0.22621-SP0
+2023-07-08 16:31:42,647:INFO:Memory: svmem(total=16572981248, available=1286275072, percent=92.2, used=15286706176, free=1286275072)
+2023-07-08 16:31:42,647:INFO:Physical Core: 4
+2023-07-08 16:31:42,647:INFO:Logical Core: 8
+2023-07-08 16:31:42,647:INFO:Checking libraries
+2023-07-08 16:31:42,647:INFO:System:
+2023-07-08 16:31:42,647:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-07-08 16:31:42,648:INFO:executable: C:\Users\imvee\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2023-07-08 16:31:42,648:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-07-08 16:31:42,648:INFO:PyCaret required dependencies:
+2023-07-08 16:31:42,648:INFO:                 pip: 22.0.4
+2023-07-08 16:31:42,649:INFO:          setuptools: 58.1.0
+2023-07-08 16:31:42,649:INFO:             pycaret: 3.0.4
+2023-07-08 16:31:42,649:INFO:             IPython: 7.25.0
+2023-07-08 16:31:42,649:INFO:          ipywidgets: 8.0.7
+2023-07-08 16:31:42,650:INFO:                tqdm: 4.65.0
+2023-07-08 16:31:42,650:INFO:               numpy: 1.22.4
+2023-07-08 16:31:42,650:INFO:              pandas: 2.0.3
+2023-07-08 16:31:42,650:INFO:              jinja2: 3.0.1
+2023-07-08 16:31:42,650:INFO:               scipy: 1.10.1
+2023-07-08 16:31:42,650:INFO:              joblib: 1.3.1
+2023-07-08 16:31:42,650:INFO:             sklearn: 0.24.2
+2023-07-08 16:31:42,651:INFO:                pyod: 1.1.0
+2023-07-08 16:31:42,651:INFO:            imblearn: 0.10.1
+2023-07-08 16:31:42,651:INFO:   category_encoders: 2.6.1
+2023-07-08 16:31:42,651:INFO:            lightgbm: 3.3.3
+2023-07-08 16:31:42,651:INFO:               numba: 0.57.1
+2023-07-08 16:31:42,651:INFO:            requests: 2.28.1
+2023-07-08 16:31:42,652:INFO:          matplotlib: 3.4.2
+2023-07-08 16:31:42,652:INFO:          scikitplot: 0.3.7
+2023-07-08 16:31:42,652:INFO:         yellowbrick: 1.5
+2023-07-08 16:31:42,652:INFO:              plotly: 5.15.0
+2023-07-08 16:31:42,652:INFO:    plotly-resampler: Not installed
+2023-07-08 16:31:42,652:INFO:             kaleido: 0.2.1
+2023-07-08 16:31:42,652:INFO:           schemdraw: 0.15
+2023-07-08 16:31:42,653:INFO:         statsmodels: 0.14.0
+2023-07-08 16:31:42,653:INFO:              sktime: 0.20.0
+2023-07-08 16:31:42,653:INFO:               tbats: 1.1.3
+2023-07-08 16:31:42,653:INFO:            pmdarima: 2.0.3
+2023-07-08 16:31:42,653:INFO:              psutil: 5.9.5
+2023-07-08 16:31:42,653:INFO:          markupsafe: 2.1.1
+2023-07-08 16:31:42,653:INFO:             pickle5: Not installed
+2023-07-08 16:31:42,653:INFO:         cloudpickle: 2.2.1
+2023-07-08 16:31:42,653:INFO:         deprecation: 2.1.0
+2023-07-08 16:31:42,654:INFO:              xxhash: 3.2.0
+2023-07-08 16:31:42,654:INFO:           wurlitzer: Not installed
+2023-07-08 16:31:42,654:INFO:PyCaret optional dependencies:
+2023-07-08 16:31:42,654:INFO:                shap: Not installed
+2023-07-08 16:31:42,654:INFO:           interpret: 0.4.2
+2023-07-08 16:31:42,654:INFO:                umap: Not installed
+2023-07-08 16:31:42,655:INFO:    pandas_profiling: 4.3.1
+2023-07-08 16:31:42,655:INFO:  explainerdashboard: Not installed
+2023-07-08 16:31:42,656:INFO:             autoviz: Not installed
+2023-07-08 16:31:42,656:INFO:           fairlearn: Not installed
+2023-07-08 16:31:42,656:INFO:          deepchecks: Not installed
+2023-07-08 16:31:42,656:INFO:             xgboost: 1.7.2
+2023-07-08 16:31:42,656:INFO:            catboost: Not installed
+2023-07-08 16:31:42,656:INFO:              kmodes: Not installed
+2023-07-08 16:31:42,657:INFO:             mlxtend: Not installed
+2023-07-08 16:31:42,657:INFO:       statsforecast: Not installed
+2023-07-08 16:31:42,657:INFO:        tune_sklearn: Not installed
+2023-07-08 16:31:42,657:INFO:                 ray: Not installed
+2023-07-08 16:31:42,658:INFO:            hyperopt: Not installed
+2023-07-08 16:31:42,658:INFO:              optuna: Not installed
+2023-07-08 16:31:42,658:INFO:               skopt: Not installed
+2023-07-08 16:31:42,658:INFO:              mlflow: Not installed
+2023-07-08 16:31:42,658:INFO:              gradio: Not installed
+2023-07-08 16:31:42,659:INFO:             fastapi: Not installed
+2023-07-08 16:31:42,659:INFO:             uvicorn: Not installed
+2023-07-08 16:31:42,659:INFO:              m2cgen: Not installed
+2023-07-08 16:31:42,659:INFO:           evidently: Not installed
+2023-07-08 16:31:42,659:INFO:               fugue: Not installed
+2023-07-08 16:31:42,659:INFO:           streamlit: 1.24.0
+2023-07-08 16:31:42,659:INFO:             prophet: Not installed
+2023-07-08 16:31:42,660:INFO:None
+2023-07-08 16:31:42,660:INFO:Set up data.
+2023-07-08 16:31:42,671:INFO:Set up train/test split.
+2023-07-08 16:31:42,677:INFO:Set up index.
+2023-07-08 16:31:42,677:INFO:Set up folding strategy.
+2023-07-08 16:31:42,678:INFO:Assigning column types.
+2023-07-08 16:31:42,686:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-07-08 16:31:42,687:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,694:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,702:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,789:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,849:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,850:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:42,854:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:42,855:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,861:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,868:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-08 16:31:42,944:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,004:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,005:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,008:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,009:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-07-08 16:31:43,015:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,021:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,096:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,154:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,154:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,157:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,164:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,172:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,247:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,310:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,311:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,314:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,315:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-07-08 16:31:43,326:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,404:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,462:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,463:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,468:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,481:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,558:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,624:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,625:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,628:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,628:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-07-08 16:31:43,717:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,775:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,776:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,781:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,867:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,923:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-08 16:31:43,924:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:43,927:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:43,927:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-07-08 16:31:44,016:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:44,082:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:44,085:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:44,171:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-08 16:31:44,231:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:44,234:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:44,235:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-07-08 16:31:44,382:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:44,386:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:44,539:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:44,542:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:44,543:INFO:Preparing preprocessing pipeline...
+2023-07-08 16:31:44,543:INFO:Set up simple imputation.
+2023-07-08 16:31:44,544:INFO:Set up column name cleaning.
+2023-07-08 16:31:44,577:INFO:Finished creating preprocessing pipeline.
+2023-07-08 16:31:44,582:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\imvee\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH', 'sulphates', 'alcohol'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2023-07-08 16:31:44,582:INFO:Creating final display dataframe.
+2023-07-08 16:31:44,683:INFO:Setup _display_container:                     Description             Value
+0                    Session id               859
+1                        Target           quality
+2                   Target type        Regression
+3           Original data shape        (1599, 12)
+4        Transformed data shape        (1599, 12)
+5   Transformed train set shape        (1119, 12)
+6    Transformed test set shape         (480, 12)
+7              Numeric features                11
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              aa75
+2023-07-08 16:31:44,687:INFO:                    Description             Value
+2023-07-08 16:31:44,687:INFO:0                    Session id               859
+2023-07-08 16:31:44,687:INFO:1                        Target           quality
+2023-07-08 16:31:44,687:INFO:2                   Target type        Regression
+2023-07-08 16:31:44,687:INFO:3           Original data shape        (1599, 12)
+2023-07-08 16:31:44,687:INFO:4        Transformed data shape        (1599, 12)
+2023-07-08 16:31:44,687:INFO:5   Transformed train set shape        (1119, 12)
+2023-07-08 16:31:44,687:INFO:6    Transformed test set shape         (480, 12)
+2023-07-08 16:31:44,687:INFO:7              Numeric features                11
+2023-07-08 16:31:44,688:INFO:8                    Preprocess              True
+2023-07-08 16:31:44,688:INFO:9               Imputation type            simple
+2023-07-08 16:31:44,688:INFO:10           Numeric imputation              mean
+2023-07-08 16:31:44,688:INFO:11       Categorical imputation              mode
+2023-07-08 16:31:44,688:INFO:12               Fold Generator             KFold
+2023-07-08 16:31:44,688:INFO:13                  Fold Number                10
+2023-07-08 16:31:44,688:INFO:14                     CPU Jobs                -1
+2023-07-08 16:31:44,688:INFO:15                      Use GPU             False
+2023-07-08 16:31:44,688:INFO:16               Log Experiment             False
+2023-07-08 16:31:44,688:INFO:17              Experiment Name  reg-default-name
+2023-07-08 16:31:44,688:INFO:18                          USI              aa75
+2023-07-08 16:31:44,843:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:44,847:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:44,994:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-08 16:31:44,997:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-08 16:31:44,998:INFO:setup() successfully completed in 2.53s...............
+2023-07-08 16:31:45,006:INFO:Initializing compare_models()
+2023-07-08 16:31:45,006:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE6E71F10>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001BCE6E71F10>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2023-07-08 16:31:45,007:INFO:Checking exceptions
+2023-07-08 16:31:45,009:INFO:Preparing display monitor
+2023-07-08 16:31:45,014:WARNING:Processing:   0%|                                     | 0/81 [00:00<?, ?it/s]
+2023-07-08 16:31:45,014:INFO:Initializing Linear Regression
+2023-07-08 16:31:45,014:INFO:Total runtime is 0.0 minutes
+2023-07-08 16:31:45,015:INFO:SubProcess create_model() called ==================================
+2023-07-08 16:31:45,015:INFO:Initializing create_model()
+2023-07-08 16:31:45,015:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BCE6E71F10>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BCE6E67070>, model_only=True, return_train_score=False, kwargs={})
+2023-07-08 16:31:45,015:INFO:Checking exceptions
+2023-07-08 16:31:45,015:INFO:Importing libraries
+2023-07-08 16:31:45,015:INFO:Copying training dataset
+2023-07-08 16:31:45,025:INFO:Defining folds
+2023-07-08 16:31:45,025:INFO:Declaring metric variables
+2023-07-08 16:31:45,026:INFO:Importing untrained model
+2023-07-08 16:31:45,026:INFO:Linear Regression Imported successfully
+2023-07-08 16:31:45,027:INFO:Starting cross validation
+2023-07-08 16:31:45,029:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
