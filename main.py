@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import os
+import pandas_profiling 
+from streamlit_pandas_profiling import st_profile_report
 
 #page config
 st.set_page_config(
@@ -21,7 +23,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 with st.sidebar:
     st.title("🤖 IntelliML")
-    choice=st.radio("Navigation",["Upload","Profiling","ML Modelling","Download the model"])
+    choice=st.radio("Navigation",["Upload","Analysis","Modelling","Download"])
     st.info("This application helps you to build an automated ML pipeline.")
 
 if os.path.exists("sourcedata.csv"):
@@ -35,11 +37,13 @@ if choice == "Upload":
         df.to_csv("soucedata.csv",index=None)
         st.dataframe(df)
 
-if choice=="Profiling":
+if choice=="Analysis":
+    st.title("Automated Exploratory Data Analysis")
+    profile_report=df.profile_report()
+    st_profile_report(profile_report)
+
+if choice=="Modelling":
     pass
 
-if choice=="ML Modelling":
-    pass
-
-if choice=="Download the model":
+if choice=="Download":
     pass
