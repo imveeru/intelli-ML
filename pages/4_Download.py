@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(
-    page_title="IntelliML - Analysis",
+    page_title="IntelliML - Uploading",
     page_icon="🤖",
     initial_sidebar_state="expanded",
 )
@@ -13,4 +13,4 @@ footer {visibility: hidden;}
 header {visibility: hidden;}
 </style>
 '''
-st.markdown(hide_st_style, unsafe_allow_html=True)  
+st.markdown(hide_st_style, unsafe_allow_html=True)
