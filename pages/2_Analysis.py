@@ -20,5 +20,6 @@ from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
 st.title("Automated Exploratory Data Analysis")
-profile = ProfileReport(st.session_state["source_data"],explorative=True)
+src=st.session_state["source_data"]
+profile = ProfileReport(src,explorative=True)
 st_profile_report(profile) 
