@@ -25,7 +25,10 @@ with st.sidebar:
     
 
 if choice == "Upload":
-    pass
+    st.title("Upload your dataset for modelling!")
+    file=st.file_uploader("Upload your CSV file here.")
+    if file:
+        pass
 
 if choice=="Profiling":
     pass
