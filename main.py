@@ -1,7 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Hello World")
+#page config
+st.set_page_config(
+    page_title="IntelliML",
+    page_icon="🤖",
+    initial_sidebar_state="expanded",
+)
 
 #hide streamlit default
 hide_st_style ='''
@@ -13,9 +18,7 @@ header {visibility: hidden;}
 '''
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-#page config
-st.set_page_config(
-    page_title="CulinaryCrafter",
-    page_icon="🥣",
-    initial_sidebar_state="expanded",
-)
+with st.sidebar:
+    st.title("🤖 IntelliML")
+    choice=st.radio("Navigation",["Upload","Profiling","ML Modelling","Download the model"])
+    st.info("This application helps you to build an automated ML pipeline.")
