@@ -44,6 +44,7 @@ def feature_dist(data):
 
     # Adjust the layout
     fig.tight_layout()
+    fig.title("Feature Distribution")
     #plt.show()
     st.pyplot(fig)
 
@@ -60,6 +61,7 @@ def outlier_plot(data):
 
     # Adjust the layout
     fig.tight_layout()
+    fig.title("Outlier Detection")
     #plt.show()
     st.pyplot(fig)
 
@@ -80,6 +82,8 @@ def correlation_plot(data):
     sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
                 square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=True)
 
+    f.title("Correlation between features")
+
     st.pyplot(f)
 
 
@@ -88,9 +92,14 @@ try:
     if src.empty:
         st.error("Upload your dataset before staring analysis!")
     
-    feature_dist(src)
-    outlier_plot(src)
-    correlation_plot(src)
+    with st.spinner("Analysing feature distribution..."):
+        feature_dist(src)
+    
+    with st.spinner("Finding outliers..."):
+        outlier_plot(src)
+    
+    with st.spinner("Analysing the correlation between features..."):
+        correlation_plot(src)
     
 except Exception:
     st.error("Upload your dataset before staring analysis!")
