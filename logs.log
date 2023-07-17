@@ -11771,3 +11771,30 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2023-07-17 21:34:11,027:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-17 23:32:20,878:WARNING:E:\IntelliML\pages\2_Analysis.py:48: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-17 23:32:26,443:WARNING:E:\IntelliML\pages\2_Analysis.py:48: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-17 23:32:29,935:WARNING:E:\IntelliML\pages\2_Analysis.py:47: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.tight_layout()
+
+2023-07-17 23:33:06,519:WARNING:E:\IntelliML\pages\2_Analysis.py:47: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.tight_layout()
+
+2023-07-17 23:33:13,318:WARNING:E:\IntelliML\pages\2_Analysis.py:47: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.tight_layout()
+
+2023-07-17 23:33:52,622:WARNING:E:\IntelliML\pages\2_Analysis.py:47: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-17 23:34:04,725:WARNING:E:\IntelliML\pages\2_Analysis.py:47: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-17 23:37:47,081:WARNING:E:\IntelliML\pages\2_Analysis.py:47: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-17 23:45:19,311:WARNING:E:\IntelliML\pages\2_Analysis.py:49: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+

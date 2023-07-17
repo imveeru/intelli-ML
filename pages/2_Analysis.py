@@ -43,10 +43,23 @@ def feature_dist(data):
 
     # Adjust the layout
     fig.tight_layout()
-    plt.show()
+    #plt.show()
     st.pyplot(fig)
 
-def
+def outlier_plot(data):
+    # Create a figure and a set of subplots
+    fig, axes = plt.subplots(nrows=4, ncols=3, figsize=(20, 20))
+
+    # Plot boxplots
+    for ax, column in zip(axes.flatten(), data.columns):
+        sns.boxplot(y = data[column], ax=ax)
+        ax.set_title(column, fontsize=14)
+
+    # Adjust the layout
+    fig.tight_layout()
+    #plt.show()
+    st.pyplot(fig)
+
 
 try:
     src=st.session_state["source_data"]
@@ -57,6 +70,7 @@ try:
     heatmap=sns.heatmap(corr)
     
     feature_dist(src)
+    outlier_plot(src)
     
 except Exception:
     st.error("Upload your dataset before staring analysis!")
