@@ -11755,3 +11755,19 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                 ('trained_model',
                  ExtraTreesRegressor(n_jobs=-1, random_state=7526))])
 2023-07-08 19:29:01,773:INFO:save_model() successfully completed......................................
+2023-07-12 21:28:09,075:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-12 21:28:09,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-12 21:28:09,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-12 21:28:09,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-17 21:34:11,007:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-17 21:34:11,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-17 21:34:11,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-17 21:34:11,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
