@@ -21,6 +21,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import seaborn as sns
 import math
+import numpy as np
 # from ydata_profiling import ProfileReport
 # from streamlit_pandas_profiling import st_profile_report
 
@@ -31,7 +32,7 @@ def feature_dist(data):
     sns.set(style="whitegrid")
 
     # Create a figure and a set of subplots
-    rows=math.ceil(len(data.columns)/3)
+    rows=int(math.ceil(len(data.columns)/3))
     #st.write(rows)
     fig, axes = plt.subplots(nrows=rows, ncols=3, figsize=(20, 20))
 
@@ -48,7 +49,9 @@ def feature_dist(data):
 
 def outlier_plot(data):
     # Create a figure and a set of subplots
-    fig, axes = plt.subplots(nrows=4, ncols=3, figsize=(20, 20))
+    rows=int(math.ceil(len(data.columns)/3))
+    
+    fig, axes = plt.subplots(nrows=rows, ncols=3, figsize=(20, 20))
 
     # Plot boxplots
     for ax, column in zip(axes.flatten(), data.columns):
@@ -60,17 +63,34 @@ def outlier_plot(data):
     #plt.show()
     st.pyplot(fig)
 
+def correlation_plot(data):
+    # Compute the correlation matrix
+    corr = data.corr()
+
+    # Generate a mask for the upper triangle
+    mask = np.triu(np.ones_like(corr, dtype=bool))
+
+    # Set up the matplotlib figure
+    f, ax = plt.subplots(figsize=(11, 9))
+
+    # Generate a custom diverging colormap
+    cmap = sns.diverging_palette(230, 20, as_cmap=True)
+
+    # Draw the heatmap with the mask and correct aspect ratio
+    sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
+                square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=True)
+
+    st.pyplot(f)
+
 
 try:
     src=st.session_state["source_data"]
     if src.empty:
         st.error("Upload your dataset before staring analysis!")
     
-    corr=src.corr()
-    heatmap=sns.heatmap(corr)
-    
     feature_dist(src)
     outlier_plot(src)
+    correlation_plot(src)
     
 except Exception:
     st.error("Upload your dataset before staring analysis!")
