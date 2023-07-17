@@ -21,12 +21,14 @@ st.title("Modelling")
 src=st.session_state["source_data"]
 target=st.selectbox("Select the target variable",src.columns)
 if st.button("Train the model"):
-    setup(src,target=target)
-    setup_df=pull()
-    st.info("Experiment Settings")
-    st.dataframe(setup_df)
-    best_model=compare_models()
-    compare_df=pull()
-    st.info("Model Comparison")
-    st.dataframe(compare_df)
-    save_model(best_model,"best_model")
+    with st.spinner("Setting the experiment parameters..."):
+        setup(src,target=target)
+        setup_df=pull()
+        st.subheader("Experiment Settings")
+        st.dataframe(setup_df)
+    with st.spinner("Fitting the data in various models..."):
+        best_model=compare_models()
+        compare_df=pull()
+        st.info("Model Comparison")
+        st.dataframe(compare_df)
+        save_model(best_model,"best_model")
