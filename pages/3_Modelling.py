@@ -24,6 +24,7 @@ if st.button("Train the model"):
     with st.spinner("Setting the experiment parameters..."):
         setup(src,target=target)
         setup_df=pull()
+        setup_df.drop(['Session id'],axis=1,inplace=True)
         st.subheader("Experiment Settings")
         st.dataframe(setup_df)
     with st.spinner("Fitting the data in various models..."):

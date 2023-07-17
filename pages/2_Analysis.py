@@ -44,8 +44,8 @@ def feature_dist(data):
 
     # Adjust the layout
     fig.tight_layout()
-    fig.title("Feature Distribution")
     #plt.show()
+    st.markdown("### Feature distribution")
     st.pyplot(fig)
 
 def outlier_plot(data):
@@ -61,8 +61,8 @@ def outlier_plot(data):
 
     # Adjust the layout
     fig.tight_layout()
-    fig.title("Outlier Detection")
     #plt.show()
+    st.markdown("### Outlier Detection")
     st.pyplot(fig)
 
 def correlation_plot(data):
@@ -82,15 +82,13 @@ def correlation_plot(data):
     sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
                 square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=True)
 
-    f.title("Correlation between features")
-
+    st.markdown("### Correlation between features")
     st.pyplot(f)
-
-
+    
 try:
     src=st.session_state["source_data"]
     if src.empty:
-        st.error("Upload your dataset before staring analysis!")
+        st.error("Oops! the uploaded dataset is empty. Kindly reupload or check it.")
     
     with st.spinner("Analysing feature distribution..."):
         feature_dist(src)
@@ -101,10 +99,9 @@ try:
     with st.spinner("Analysing the correlation between features..."):
         correlation_plot(src)
     
-except Exception:
+except Exception as error:
     st.error("Upload your dataset before staring analysis!")
-
-
+    st.error(error)
 
 
 # profile = ProfileReport(src,explorative=True)
