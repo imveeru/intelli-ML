@@ -24,7 +24,12 @@ if st.button("Train the model"):
     with st.spinner("Setting the experiment parameters..."):
         setup(src,target=target)
         setup_df=pull()
-        setup_df.drop(['Session id'],axis=1,inplace=True)
+        #st.text(setup_df.columns)
+        setup_df=setup_df[setup_df['Description'].ne('Session id')]
+        setup_df=setup_df[setup_df['Description'].ne('USI')]
+        setup_df=setup_df[setup_df['Description'].ne('Experiment Name')]
+        setup_df=setup_df[setup_df['Description'].ne('Log Experiment')]
+        #setup_df.drop(['Session id'],inplace=True)
         st.subheader("Experiment Settings")
         st.dataframe(setup_df)
     with st.spinner("Fitting the data in various models..."):
