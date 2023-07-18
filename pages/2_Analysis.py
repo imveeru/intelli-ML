@@ -166,7 +166,6 @@ def feature_dist(data):
     st.session_state["pdf_report"].image("dist_plot.png",w=st.session_state["print_w"])
     st.session_state["pdf_report"].ln(5)
     
-    
 def outlier_plot(data):
     # Create a figure and a set of subplots
     rows=int(math.ceil(len(data.columns)/3))
