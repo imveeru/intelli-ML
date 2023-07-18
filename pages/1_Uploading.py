@@ -52,18 +52,19 @@ if file:
     st.session_state["pdf_report"].set_auto_page_break(auto=True,margin=15)
     st.session_state["pdf_report"].add_page()
     effective_page_width = st.session_state["pdf_report"].w - 2*st.session_state["pdf_report"].l_margin
+    st.session_state["print_w"]=effective_page_width
 
     st.session_state["pdf_report"].set_font("Helvetica",size=24,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
     st.session_state["pdf_report"].ln(10)
     
-    st.session_state["pdf_report"].set_font("Helvetica",size=12)
+    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align="J")
     st.session_state["pdf_report"].ln(2.5)
     print_df(df.head(),st.session_state["pdf_report"])
     
     st.subheader("Dataset")
-    st.dataframe(df.head())  
+    st.dataframe(df)  
     st.caption("Now click on Analysis button to perform detailed data analysis on the uploaded dataset.")  
-    st.session_state["pdf_report"].output("test.pdf")
+    
     

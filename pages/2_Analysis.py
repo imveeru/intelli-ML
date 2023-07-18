@@ -85,7 +85,7 @@ def feature_dist(data):
     The above given is the description/descirbed of each feature of a dataset.
     Write a detailed comment based on the given data.  
     Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
-    Do not exceed 250 words.
+    Strictly do not exceed 200 words.
     '''
     
     null_values=data.isnull().sum().to_string()
@@ -129,6 +129,36 @@ def feature_dist(data):
     st.pyplot(fig)
     st.write(dist_response)
     
+    st.session_state["pdf_report"].ln(5)
+    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="Feature Description",ln=True,align="L")
+    st.session_state["pdf_report"].ln(2.5)
+    st.session_state["pdf_report"].set_font("Helvetica",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=features_response,ln=True,align="L")
+    st.session_state["pdf_report"].ln(5)
+    
+    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="Insights on dataset",ln=True,align="L")
+    st.session_state["pdf_report"].ln(2.5)
+    st.session_state["pdf_report"].set_font("Helvetica",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=desc_response,ln=True,align="L")
+    st.session_state["pdf_report"].ln(5)
+    
+    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="Insights on Null Values in the dataset",ln=True,align="L")
+    st.session_state["pdf_report"].ln(2.5)
+    st.session_state["pdf_report"].set_font("Helvetica",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=null_response,ln=True,align="L")
+    st.session_state["pdf_report"].ln(5)
+    
+    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="Feature Distribution",ln=True,align="L")
+    st.session_state["pdf_report"].ln(2.5)
+    st.session_state["pdf_report"].set_font("Helvetica",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=dist_response,ln=True,align="L")
+    st.session_state["pdf_report"].ln(5)
+    
+    
 def outlier_plot(data):
     # Create a figure and a set of subplots
     rows=int(math.ceil(len(data.columns)/3))
@@ -154,7 +184,7 @@ def outlier_plot(data):
     Write it as a paragraph in an academic tone. No need to mention all the numerical values.
     Also include the consequences of such outliers.
     Only comment on impactful features.
-    Strictly do not exceed 200 words.
+    Strictly do not exceed 150 words.
     '''
     
     outlier_response=ask_llm(outlier_prompt)
