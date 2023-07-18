@@ -22,8 +22,28 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 import numpy as np
+import google.generativeai as palm
 # from ydata_profiling import ProfileReport
 # from streamlit_pandas_profiling import st_profile_report
+from dotenv import dotenv_values
+
+config = dotenv_values(".env") 
+
+palm.configure(api_key=config["GOOGLE_PALM_API_KEY"])
+defaults = {
+  'model': 'models/text-bison-001',
+  'temperature': 0.6,
+  'candidate_count': 1,
+  'top_k': 40,
+  'top_p': 0.95,
+  'max_output_tokens': 1024,
+  'stop_sequences': [],
+  'safety_settings': [{"category":"HARM_CATEGORY_DEROGATORY","threshold":1},{"category":"HARM_CATEGORY_TOXICITY","threshold":1},{"category":"HARM_CATEGORY_VIOLENCE","threshold":2},{"category":"HARM_CATEGORY_SEXUAL","threshold":2},{"category":"HARM_CATEGORY_MEDICAL","threshold":2},{"category":"HARM_CATEGORY_DANGEROUS","threshold":2}],
+}
+
+def ask_llm(prompt,defaults):
+    return palm.generate_text(**defaults, prompt=prompt)
+
 
 st.title("Automated Exploratory Data Analysis")
 
