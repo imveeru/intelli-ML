@@ -68,8 +68,6 @@ def feature_dist(data):
     # Adjust the layout
     fig.tight_layout()
     #plt.show()
-    st.markdown("### Feature distribution")
-    st.pyplot(fig)
     
     features_prompt=f'''
     {data.columns}
@@ -78,8 +76,29 @@ def feature_dist(data):
     Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
     '''
     
+    desc_prompt=f'''
+    {data.describe().to_string()}
+
+    The above given is the description/descirbed of each feature of a dataset.
+    Write a detailed comment based on the given data.  
+    Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
+    '''
+    
+    null_prompt=f'''
+    
+    '''
+    
     features_response=ask_llm(features_prompt)
+    desc_response=ask_llm(desc_prompt)
+    
+    st.markdown("#### Feature Description")
     st.write(features_response)
+    st.markdown("#### Insights on dataset")
+    st.write(desc_response)
+    
+    st.pyplot(fig)
+    
+    
     
     
 
@@ -125,18 +144,19 @@ try:
     target=st.selectbox("Select the target variable",src.columns)
     st.session_state["target"] = target
     
-    if src.empty:
-        st.error("Oops! the uploaded dataset is empty. Kindly reupload or check it.")
-    
-    if target:
-        with st.spinner("Analysing feature distribution..."):
-            feature_dist(src)
+    if st.button("Start Analysis"):
+        if src.empty:
+            st.error("Oops! the uploaded dataset is empty. Kindly reupload or check it.")
         
-        with st.spinner("Finding outliers..."):
-            outlier_plot(src)
-        
-        with st.spinner("Analysing the correlation between features..."):
-            correlation_plot(src)
+        if target:
+            with st.spinner("Analysing feature distribution..."):
+                feature_dist(src)
+            
+            with st.spinner("Finding outliers..."):
+                outlier_plot(src)
+            
+            with st.spinner("Analysing the correlation between features..."):
+                correlation_plot(src)
     
 except Exception as error:
     st.error("Upload your dataset before staring analysis!")
