@@ -140,7 +140,7 @@ def feature_dist(data):
     st.session_state["pdf_report"].set_font("Arial",size=10)
     st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=features_response,ln=True,align="J")
     st.session_state["pdf_report"].ln(5)
-    st.session_state["pdf_report"].image("pair_plot.png",w=st.session_state["print_w"])
+    st.session_state["pdf_report"].image("pair_plot.png",w=st.session_state["print_w"]/2)
     st.session_state["pdf_report"].ln(5)
     
     st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
@@ -163,7 +163,7 @@ def feature_dist(data):
     st.session_state["pdf_report"].set_font("Arial",size=10)
     st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=dist_response,ln=True,align="J")
     st.session_state["pdf_report"].ln(5)
-    st.session_state["pdf_report"].image("dist_plot.png")
+    st.session_state["pdf_report"].image("dist_plot.png",w=st.session_state["print_w"])
     st.session_state["pdf_report"].ln(5)
     
     
@@ -181,6 +181,7 @@ def outlier_plot(data):
     # Adjust the layout
     fig.tight_layout()
     #plt.show()
+    plt.savefig("outlier_plot.png")
     
     outlier_prompt=f'''
     {data.describe().to_string()}
@@ -201,6 +202,16 @@ def outlier_plot(data):
     st.pyplot(fig)
     st.write(outlier_response)
     
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="Outlier Detection",ln=True,align="L")
+    st.session_state["pdf_report"].ln(2.5)
+    st.session_state["pdf_report"].set_font("Arial",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=outlier_response,ln=True,align="J")
+    st.session_state["pdf_report"].ln(5)
+    st.session_state["pdf_report"].image("outlier_plot.png",w=st.session_state["print_w"])
+    st.session_state["pdf_report"].ln(5)
+    
+    
 def correlation_plot(data):
     # Compute the correlation matrix
     corr = data.corr()
@@ -217,6 +228,8 @@ def correlation_plot(data):
     # Draw the heatmap with the mask and correct aspect ratio
     sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
                 square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=True)
+
+    plt.savefig("corr_plot.png")
     
     correlation_prompt=f'''
     {np.array(data.columns)}
@@ -236,6 +249,15 @@ def correlation_plot(data):
     st.markdown("### Correlation between features")
     st.pyplot(f)
     st.write(correlation_response)
+    
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="Correlation between features",ln=True,align="L")
+    st.session_state["pdf_report"].ln(2.5)
+    st.session_state["pdf_report"].set_font("Arial",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=correlation_response,ln=True,align="J")
+    st.session_state["pdf_report"].ln(5)
+    st.session_state["pdf_report"].image("corr_plot.png",w=st.session_state["print_w"])
+    st.session_state["pdf_report"].ln(5)
 
 try:
     src=st.session_state["source_data"]
