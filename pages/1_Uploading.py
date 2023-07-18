@@ -32,12 +32,13 @@ if file:
     
     st.session_state["pdf_report"]=FPDF(format='A4', unit='mm')
     st.session_state["pdf_report"].set_margin(15)
-    st.session_state["pdf_report"].set_font("Helvetica",size=20,style="B")
     st.session_state["pdf_report"].set_auto_page_break(auto=True,margin=15)
     st.session_state["pdf_report"].add_page()
     effective_page_width = st.session_state["pdf_report"].w - 2*st.session_state["pdf_report"].l_margin
 
-    st.session_state["pdf_report"].multi_cell(w=0,txt="# Page 1",ln=True)
+    st.session_state["pdf_report"].set_font("Helvetica",size=24,style="B")
+    st.session_state["pdf_report"].multi_cell(w=0,txt="🤖 IntelliML Report",ln=True,align="C")
+    st.session_state["pdf_report"].ln(10)
     
     st.session_state["pdf_report"].set_font("Helvetica",size=12)
     st.session_state["pdf_report"].multi_cell(w=0,txt="# Page 1",ln=True)
