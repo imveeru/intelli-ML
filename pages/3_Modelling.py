@@ -76,11 +76,12 @@ if st.button("Train the model"):
         Write a paragraph using the given data. Make sure the paragraph is in an academic tone. 
         Strictly do not exceed 200 words.
         '''
+        st.subheader("Experiment Settings")
+        st.dataframe(setup_df)
         
         setup_response=ask_llm(setup_prompt)
         
-        st.subheader("Experiment Settings")
-        st.dataframe(setup_df)
+        
         st.write(setup_response)
         
         st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
@@ -102,6 +103,7 @@ if st.button("Train the model"):
         {compare_df["Model"].values}
         
         The above given is an array of Machine Learning models. Write a single line explanation for each model.
+        Do not exceed 150 words.
         '''
         
         model_comparison_prompt=f'''
