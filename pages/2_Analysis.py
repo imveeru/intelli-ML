@@ -147,8 +147,8 @@ def feature_dist(data):
     st.session_state["pdf_report"].set_font("Arial",size=9)
     st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=desc_response,ln=True,align="J")
     st.session_state["pdf_report"].ln(5)
-    st.session_state["pdf_report"].image("pair_plot.png",w=st.session_state["print_w"])
-    st.session_state["pdf_report"].ln(5)
+    #st.session_state["pdf_report"].image("pair_plot.png",w=st.session_state["print_w"])
+    #st.session_state["pdf_report"].ln(5)
     
     st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="Insights on Null Values in the dataset",ln=True,align="L")

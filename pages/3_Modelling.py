@@ -91,6 +91,7 @@ if st.button("Train the model"):
         st.session_state["pdf_report"].ln(5)
         
         print_df(setup_df,st.session_state["pdf_report"],st.session_state["print_w"])
+        st.session_state["pdf_report"].ln(5)
         
         
     with st.spinner("Fitting the data in various models..."):
@@ -136,11 +137,13 @@ if st.button("Train the model"):
         st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=model_exp_response,ln=True,align="J")
         st.session_state["pdf_report"].ln(5)
         
-        print_df(compare_df,st.session_state["pdf_report"],st.session_state["print_w"])
-        
         st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
         st.session_state["pdf_report"].multi_cell(w=0,txt="Machine learning model performance comparison",ln=True,align="L")
         st.session_state["pdf_report"].ln(2.5)
+        
+        print_df(compare_df,st.session_state["pdf_report"],st.session_state["print_w"])
+        st.session_state["pdf_report"].ln(5)
+        
         st.session_state["pdf_report"].set_font("Arial",size=9)
         st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=model_comparison_response,ln=True,align="J")
         st.session_state["pdf_report"].ln(5)
