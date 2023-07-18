@@ -19,18 +19,16 @@ import os
 import pandas as pd
 from fpdf import FPDF
 
-def print_df(df,pdf):
+def print_df(df,pdf,w):
     df = df.applymap(str)  # Convert all data inside dataframe into string type
 
     columns = [list(df)]  # Get list of dataframe columns
     rows = df.values.tolist()  # Get list of dataframe rows
     data = columns + rows  # Combine columns and rows in one list
-    pdf.set_font("Helvetica",size=7)
-    with pdf.table(cell_fill_color=200,  # grey
-                cell_fill_mode="ROWS",
-                line_height=pdf.font_size * 2.5,
+    pdf.set_font("Arial",size=7)
+    with pdf.table(line_height=pdf.font_size * 2.5,
                 text_align="CENTER",
-                width=160) as table:
+                width=w) as table:
         for data_row in data:
             row = table.row()
             for datum in data_row:
@@ -54,14 +52,14 @@ if file:
     effective_page_width = st.session_state["pdf_report"].w - 2*st.session_state["pdf_report"].l_margin
     st.session_state["print_w"]=effective_page_width
 
-    st.session_state["pdf_report"].set_font("Helvetica",size=24,style="B")
+    st.session_state["pdf_report"].set_font("Arial",size=24,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
     st.session_state["pdf_report"].ln(10)
     
-    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align="J")
     st.session_state["pdf_report"].ln(2.5)
-    print_df(df.head(),st.session_state["pdf_report"])
+    print_df(df.head(),st.session_state["pdf_report"],effective_page_width)
     
     st.subheader("Dataset")
     st.dataframe(df)  

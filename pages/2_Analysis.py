@@ -68,8 +68,12 @@ def feature_dist(data):
     # Adjust the layout
     fig.tight_layout()
     #plt.show()
+    plt.title("Feature distribution")
+    plt.savefig("dist_plot.png")
     
-    pair_plot=sns.pairplot(data)
+    pair_plot=sns.pairplot(data).set(title="Pairplot of features")
+    # pp_file=pair_plot.get_figure()
+    pair_plot.savefig("pair_plot.png")
     
     features_prompt=f'''
     {data.columns}
@@ -130,32 +134,36 @@ def feature_dist(data):
     st.write(dist_response)
     
     st.session_state["pdf_report"].ln(5)
-    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="Feature Description",ln=True,align="L")
     st.session_state["pdf_report"].ln(2.5)
-    st.session_state["pdf_report"].set_font("Helvetica",size=10)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=features_response,ln=True,align="L")
+    st.session_state["pdf_report"].set_font("Arial",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=features_response,ln=True,align="J")
+    st.session_state["pdf_report"].ln(5)
+    st.session_state["pdf_report"].image("pair_plot.png")
     st.session_state["pdf_report"].ln(5)
     
-    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="Insights on dataset",ln=True,align="L")
     st.session_state["pdf_report"].ln(2.5)
-    st.session_state["pdf_report"].set_font("Helvetica",size=10)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=desc_response,ln=True,align="L")
+    st.session_state["pdf_report"].set_font("Arial",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=desc_response,ln=True,align="J")
     st.session_state["pdf_report"].ln(5)
     
-    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="Insights on Null Values in the dataset",ln=True,align="L")
     st.session_state["pdf_report"].ln(2.5)
-    st.session_state["pdf_report"].set_font("Helvetica",size=10)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=null_response,ln=True,align="L")
+    st.session_state["pdf_report"].set_font("Arial",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=null_response,ln=True,align="J")
     st.session_state["pdf_report"].ln(5)
     
-    st.session_state["pdf_report"].set_font("Helvetica",size=12,style="B")
+    st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
     st.session_state["pdf_report"].multi_cell(w=0,txt="Feature Distribution",ln=True,align="L")
     st.session_state["pdf_report"].ln(2.5)
-    st.session_state["pdf_report"].set_font("Helvetica",size=10)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=dist_response,ln=True,align="L")
+    st.session_state["pdf_report"].set_font("Arial",size=10)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=dist_response,ln=True,align="J")
+    st.session_state["pdf_report"].ln(5)
+    st.session_state["pdf_report"].image("dist_plot.png")
     st.session_state["pdf_report"].ln(5)
     
     
