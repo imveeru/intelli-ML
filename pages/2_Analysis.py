@@ -69,11 +69,14 @@ def feature_dist(data):
     fig.tight_layout()
     #plt.show()
     
+    pair_plot=sns.pairplot(data)
+    
     features_prompt=f'''
     {data.columns}
 
     The above given array contains the features of a dataset. Write an explanation for each feature.  
     Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
+    Do not exceed 200 words.
     '''
     
     desc_prompt=f'''
@@ -82,6 +85,7 @@ def feature_dist(data):
     The above given is the description/descirbed of each feature of a dataset.
     Write a detailed comment based on the given data.  
     Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
+    Do not exceed 250 words.
     '''
     
     null_values=data.isnull().sum().to_string()
@@ -93,6 +97,7 @@ def feature_dist(data):
     Write a detailed comment based on the given data.  
     Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
     Also comment on the consequence of the status of null data in the given dataset.
+    Do not exceed 100 words.
     '''
     
     dist_prompt=f'''
@@ -105,6 +110,7 @@ def feature_dist(data):
     So consider the right and left skew accordingly.
 
     Also comment on the consequences of such distribution and skewness in data.
+    Do not exceed 250 words.
     '''
     
     features_response=ask_llm(features_prompt)
@@ -114,6 +120,7 @@ def feature_dist(data):
     
     st.markdown("#### Feature Description")
     st.write(features_response)
+    st.pyplot(pair_plot)
     st.markdown("#### Insights on dataset")
     st.write(desc_response)
     st.markdown("##### Insights on Null Values in the dataset")
@@ -122,10 +129,6 @@ def feature_dist(data):
     st.pyplot(fig)
     st.write(dist_response)
     
-    
-    
-    
-
 def outlier_plot(data):
     # Create a figure and a set of subplots
     rows=int(math.ceil(len(data.columns)/3))
@@ -140,8 +143,26 @@ def outlier_plot(data):
     # Adjust the layout
     fig.tight_layout()
     #plt.show()
+    
+    outlier_prompt=f'''
+    {data.describe().to_string()}
+
+    The above given is the description/descirbed of each feature of a dataset.
+    Write a detailed comment only on the outliers in each feature based on the given data.
+    Also comment on the presence outliers in higher end and lower end of the scale.
+    Do not be too sensitive while commenting. Small variations in outliers can be considered.
+    Write it as a paragraph in an academic tone. No need to mention all the numerical values.
+    Also include the consequences of such outliers.
+    Only comment on impactful features.
+    Strictly do not exceed 200 words.
+    '''
+    
+    outlier_response=ask_llm(outlier_prompt)
+    
     st.markdown("### Outlier Detection")
     st.pyplot(fig)
+    st.write(outlier_response)
+    
 
 def correlation_plot(data):
     # Compute the correlation matrix
@@ -159,9 +180,25 @@ def correlation_plot(data):
     # Draw the heatmap with the mask and correct aspect ratio
     sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
                 square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=True)
+    
+    correlation_prompt=f'''
+    {np.array(data.columns)}
+
+    The above given array is the list of features in a dataset.
+    
+    {data.corr()}
+    
+    This is the correlation matrix of the dataset.
+
+    Write a detailed inference of the given correlation matrix by using the above given feature names.
+    Give it as a detailed single paragraph in academic tone.
+    '''
+    
+    correlation_response=ask_llm(correlation_prompt)
 
     st.markdown("### Correlation between features")
     st.pyplot(f)
+    st.write(correlation_response)
 
 try:
     src=st.session_state["source_data"]
@@ -181,6 +218,8 @@ try:
             
             with st.spinner("Analysing the correlation between features..."):
                 correlation_plot(src)
+            
+            st.caption("Now click on the modelling button to train and test your dataset in various machine learning models.")
     
 except Exception as error:
     st.error("Upload your dataset before staring analysis!")
