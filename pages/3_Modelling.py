@@ -19,7 +19,8 @@ from pycaret.regression import *
 
 st.title("Modelling")
 src=st.session_state["source_data"]
-target=st.selectbox("Select the target variable",src.columns)
+target=st.session_state["target"]
+
 if st.button("Train the model"):
     with st.spinner("Setting the experiment parameters..."):
         setup(src,target=target)

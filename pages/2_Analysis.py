@@ -84,20 +84,24 @@ def correlation_plot(data):
 
     st.markdown("### Correlation between features")
     st.pyplot(f)
-    
+
 try:
     src=st.session_state["source_data"]
+    target=st.selectbox("Select the target variable",src.columns)
+    st.session_state["target"] = target
+    
     if src.empty:
         st.error("Oops! the uploaded dataset is empty. Kindly reupload or check it.")
     
-    with st.spinner("Analysing feature distribution..."):
-        feature_dist(src)
-    
-    with st.spinner("Finding outliers..."):
-        outlier_plot(src)
-    
-    with st.spinner("Analysing the correlation between features..."):
-        correlation_plot(src)
+    if target:
+        with st.spinner("Analysing feature distribution..."):
+            feature_dist(src)
+        
+        with st.spinner("Finding outliers..."):
+            outlier_plot(src)
+        
+        with st.spinner("Analysing the correlation between features..."):
+            correlation_plot(src)
     
 except Exception as error:
     st.error("Upload your dataset before staring analysis!")
