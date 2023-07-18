@@ -15,6 +15,8 @@ header {visibility: hidden;}
 '''
 st.markdown(hide_st_style, unsafe_allow_html=True) 
 
+# from ydata_profiling import ProfileReport
+# from streamlit_pandas_profiling import st_profile_report
 
 import pandas as pd
 import seaborn as sns
@@ -23,8 +25,6 @@ import seaborn as sns
 import math
 import numpy as np
 import google.generativeai as palm
-# from ydata_profiling import ProfileReport
-# from streamlit_pandas_profiling import st_profile_report
 from dotenv import dotenv_values
 
 config = dotenv_values(".env") 
@@ -34,7 +34,7 @@ palm.configure(api_key=config["GOOGLE_PALM_API_KEY"])
 def ask_llm(prompt):
     defaults = {
         'model': 'models/text-bison-001',
-        'temperature': 0.6,
+        'temperature': 0.7,
         'candidate_count': 1,
         'top_k': 40,
         'top_p': 0.95,
@@ -163,7 +163,6 @@ def outlier_plot(data):
     st.pyplot(fig)
     st.write(outlier_response)
     
-
 def correlation_plot(data):
     # Compute the correlation matrix
     corr = data.corr()
