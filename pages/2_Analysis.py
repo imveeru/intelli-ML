@@ -30,19 +30,22 @@ from dotenv import dotenv_values
 config = dotenv_values(".env") 
 
 palm.configure(api_key=config["GOOGLE_PALM_API_KEY"])
-defaults = {
-  'model': 'models/text-bison-001',
-  'temperature': 0.6,
-  'candidate_count': 1,
-  'top_k': 40,
-  'top_p': 0.95,
-  'max_output_tokens': 1024,
-  'stop_sequences': [],
-  'safety_settings': [{"category":"HARM_CATEGORY_DEROGATORY","threshold":1},{"category":"HARM_CATEGORY_TOXICITY","threshold":1},{"category":"HARM_CATEGORY_VIOLENCE","threshold":2},{"category":"HARM_CATEGORY_SEXUAL","threshold":2},{"category":"HARM_CATEGORY_MEDICAL","threshold":2},{"category":"HARM_CATEGORY_DANGEROUS","threshold":2}],
-}
 
-def ask_llm(prompt,defaults):
-    return palm.generate_text(**defaults, prompt=prompt)
+def ask_llm(prompt):
+    defaults = {
+        'model': 'models/text-bison-001',
+        'temperature': 0.6,
+        'candidate_count': 1,
+        'top_k': 40,
+        'top_p': 0.95,
+        'max_output_tokens': 1024,
+        'stop_sequences': [],
+        'safety_settings': [{"category":"HARM_CATEGORY_DEROGATORY","threshold":1},{"category":"HARM_CATEGORY_TOXICITY","threshold":1},{"category":"HARM_CATEGORY_VIOLENCE","threshold":2},{"category":"HARM_CATEGORY_SEXUAL","threshold":2},{"category":"HARM_CATEGORY_MEDICAL","threshold":2},{"category":"HARM_CATEGORY_DANGEROUS","threshold":2}],
+    }
+    
+    res=palm.generate_text(**defaults, prompt=prompt)
+    
+    return res.result
 
 
 st.title("Automated Exploratory Data Analysis")
@@ -67,6 +70,18 @@ def feature_dist(data):
     #plt.show()
     st.markdown("### Feature distribution")
     st.pyplot(fig)
+    
+    features_prompt=f'''
+    {data.columns}
+
+    The above given array contains the features of a dataset. Write an explanation for each feature.  
+    Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
+    '''
+    
+    features_response=ask_llm(features_prompt)
+    st.write(features_response)
+    
+    
 
 def outlier_plot(data):
     # Create a figure and a set of subplots
