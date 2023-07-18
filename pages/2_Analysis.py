@@ -211,7 +211,6 @@ def outlier_plot(data):
     st.session_state["pdf_report"].image("outlier_plot.png",w=st.session_state["print_w"])
     st.session_state["pdf_report"].ln(5)
     
-    
 def correlation_plot(data):
     # Compute the correlation matrix
     corr = data.corr()
