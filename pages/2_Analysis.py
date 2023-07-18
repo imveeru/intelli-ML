@@ -84,19 +84,43 @@ def feature_dist(data):
     Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
     '''
     
+    null_values=data.isnull().sum().to_string()
+    null_values=null_values.split('\n')
     null_prompt=f'''
+    {null_values}
+
+    The above given is the count of null values in each feature of a dataset.
+    Write a detailed comment based on the given data.  
+    Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
+    Also comment on the consequence of the status of null data in the given dataset.
+    '''
     
+    dist_prompt=f'''
+    {data.skew().to_string()}
+    The above given data presents the skewness of each feature of a dataset.
+    Write a detailed comment on the distribution of each feature based on the given data.  
+    Write it as a single paragraph in an academic tone. No need to mention all the numerical values.
+
+    Note: The skewness data is obtained using the pandas builtin skew function.
+    So consider the right and left skew accordingly.
+
+    Also comment on the consequences of such distribution and skewness in data.
     '''
     
     features_response=ask_llm(features_prompt)
     desc_response=ask_llm(desc_prompt)
+    null_response=ask_llm(null_prompt)
+    dist_response=ask_llm(dist_prompt)
     
     st.markdown("#### Feature Description")
     st.write(features_response)
     st.markdown("#### Insights on dataset")
     st.write(desc_response)
-    
+    st.markdown("##### Insights on Null Values in the dataset")
+    st.write(null_response)
+    st.markdown("#### Feature Distribution")
     st.pyplot(fig)
+    st.write(dist_response)
     
     
     
