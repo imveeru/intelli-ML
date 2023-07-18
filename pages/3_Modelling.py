@@ -39,6 +39,21 @@ def ask_llm(prompt):
     
     return res.result
 
+def print_df(df,pdf,w):
+    df = df.applymap(str)  # Convert all data inside dataframe into string type
+
+    columns = [list(df)]  # Get list of dataframe columns
+    rows = df.values.tolist()  # Get list of dataframe rows
+    data = columns + rows  # Combine columns and rows in one list
+    pdf.set_font("Arial",size=7)
+    with pdf.table(line_height=pdf.font_size * 2.5,
+                text_align="CENTER",
+                width=w) as table:
+        for data_row in data:
+            row = table.row()
+            for datum in data_row:
+                row.cell(datum)
+
 st.title("Modelling")
 src=st.session_state["source_data"]
 target=st.session_state["target"]
@@ -67,6 +82,16 @@ if st.button("Train the model"):
         st.subheader("Experiment Settings")
         st.dataframe(setup_df)
         st.write(setup_response)
+        
+        st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
+        st.session_state["pdf_report"].multi_cell(w=0,txt="Machine Learning experiment settings",ln=True,align="L")
+        st.session_state["pdf_report"].ln(2.5)
+        st.session_state["pdf_report"].set_font("Arial",size=9)
+        st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=setup_response,ln=True,align="J")
+        st.session_state["pdf_report"].ln(5)
+        
+        print_df(setup_df,st.session_state["pdf_report"],st.session_state["print_w"])
+        
         
     with st.spinner("Fitting the data in various models..."):
         best_model=compare_models()
@@ -100,4 +125,23 @@ if st.button("Train the model"):
         st.markdown("#### Machine learning model performance comparison")
         st.dataframe(compare_df)
         st.write(model_comparison_response)
+        #st.pyplot(plot_model(best_model, plot = 'residuals'))
         save_model(best_model,"best_model")
+        
+        
+        st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
+        st.session_state["pdf_report"].multi_cell(w=0,txt="Machine learning models used",ln=True,align="L")
+        st.session_state["pdf_report"].ln(2.5)
+        st.session_state["pdf_report"].set_font("Arial",size=9)
+        st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=model_exp_response,ln=True,align="J")
+        st.session_state["pdf_report"].ln(5)
+        
+        print_df(compare_df,st.session_state["pdf_report"],st.session_state["print_w"])
+        
+        st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
+        st.session_state["pdf_report"].multi_cell(w=0,txt="Machine learning model performance comparison",ln=True,align="L")
+        st.session_state["pdf_report"].ln(2.5)
+        st.session_state["pdf_report"].set_font("Arial",size=9)
+        st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=model_comparison_response,ln=True,align="J")
+        st.session_state["pdf_report"].ln(5)
+       
