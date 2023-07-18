@@ -95,8 +95,9 @@ if st.button("Train the model"):
         model_exp_response=ask_llm(model_exp_prompt)
         model_comparison_response=ask_llm(model_comparison_prompt)
         
-        st.info("Model Comparison")
+        st.markdown("#### Machine learning models used")
         st.write(model_exp_response)
+        st.markdown("#### Machine learning model performance comparison")
         st.dataframe(compare_df)
         st.write(model_comparison_response)
         save_model(best_model,"best_model")
