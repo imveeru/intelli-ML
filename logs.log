@@ -26708,3 +26708,156 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2023-07-19 23:14:30,311:WARNING:E:\IntelliML\pages\3_Modelling.py:151: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
   st.session_state["pdf_report"].ln(5)
 
+2023-07-19 23:22:01,041:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:22:01,041:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:22:01,042:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align="J")
+
+2023-07-19 23:22:17,773:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:22:17,774:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:22:17,774:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].cell(w=effective_page_width,txt="Sample Datset",ln=True,align="J")
+
+2023-07-19 23:23:01,824:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:23:01,825:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:23:01,826:WARNING:E:\IntelliML\pages\1_Uploading.py:60: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].set_fill_color(0,255,0)
+
+2023-07-19 23:25:13,599:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:25:13,599:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:25:13,601:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].cell(w=effective_page_width,txt="Sample Datset",ln=True,align="J")
+
+2023-07-19 23:26:24,078:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:26:24,079:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:26:24,079:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].cell(w=effective_page_width,txt="Sample Datset",ln=True,fill=1)
+
+2023-07-19 23:26:27,754:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:26:27,755:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:26:27,756:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].cell(w=effective_page_width,txt="Sample Datset",ln=True,fill=1)
+
+2023-07-19 23:26:51,228:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:26:51,228:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:26:51,229:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].cell(w=effective_page_width,txt="Sample Datset",ln=True,fill=1)
+
+2023-07-19 23:27:03,151:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:27:03,151:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:27:03,152:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align='J',fill=True)
+
+2023-07-19 23:27:18,496:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:27:18,497:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:27:18,498:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align='J',fill=True)
+
+2023-07-19 23:29:57,089:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:29:57,089:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:29:57,090:WARNING:E:\IntelliML\pages\1_Uploading.py:60: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].set_fill_color(0,255,0)
+
+2023-07-19 23:31:07,785:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:31:07,786:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:31:07,786:WARNING:E:\IntelliML\pages\1_Uploading.py:61: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align='J',fill=True)
+
+2023-07-19 23:33:08,289:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:33:08,289:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:33:08,290:WARNING:E:\IntelliML\pages\1_Uploading.py:62: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].ln(2.5)
+
+2023-07-19 23:33:28,912:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:33:28,912:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:33:28,913:WARNING:E:\IntelliML\pages\1_Uploading.py:62: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="Sample Datset",ln=True,align='J',border=2,fill=True)
+
+2023-07-19 23:34:44,235:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:34:44,235:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:34:44,236:WARNING:E:\IntelliML\pages\1_Uploading.py:63: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].ln(2.5)
+
+2023-07-19 23:35:23,449:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:35:23,449:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:35:23,450:WARNING:E:\IntelliML\pages\1_Uploading.py:63: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].ln(2.5)
+
+2023-07-19 23:35:57,145:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:35:57,145:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:35:57,146:WARNING:E:\IntelliML\pages\1_Uploading.py:63: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].ln(2.5)
+
+2023-07-19 23:38:22,635:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-19 23:38:22,635:WARNING:E:\IntelliML\pages\1_Uploading.py:56: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+
+2023-07-19 23:38:22,636:WARNING:E:\IntelliML\pages\1_Uploading.py:64: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].set_draw_color(255,255,255)
+
