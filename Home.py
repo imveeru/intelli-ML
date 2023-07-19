@@ -25,6 +25,9 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # st.title("🤖 IntelliML")
 
+with st.sidebar:
+    st.info("Click on the \"Upload\" button in the sidebar to upload your dataset.")
+
 st.image("./assets/cover img.jpg")
 
 desc='''
@@ -60,6 +63,8 @@ Developed by [Veeramanohar](https://github.com/imveeru)
 '''
 
 st.write(desc,markdown=True)
+
+st.info("As of now, only Regression tasks are supported. Classification, and Clustering tasks will be added soon!",icon="⌛")
 
 # with st.sidebar:
 #     st.title("🤖 IntelliML")

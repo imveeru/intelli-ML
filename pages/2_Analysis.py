@@ -334,5 +334,8 @@ except Exception as error:
     st.error(error)
 
 
+
+with st.sidebar:
+    st.info("Click on the \"Modelling\" button in the sidebar to train and test the uploaded dataset in multiple machine learning models.")
 # profile = ProfileReport(src,explorative=True)
 # st_profile_report(profile) 

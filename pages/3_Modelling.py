@@ -174,4 +174,8 @@ if st.button("Train and Test various Machine Learning models"):
         st.session_state["pdf_report"].set_font("Arial",size=9)
         st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=model_comparison_response,ln=True,align="J")
         st.session_state["pdf_report"].ln(5)
-       
+
+
+
+with st.sidebar:
+    st.info("Click on the \"Download\" button in the sidebar to download the best performing model(.pkl) and a customized report(.pdf).")
