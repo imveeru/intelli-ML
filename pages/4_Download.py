@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(
-    page_title="IntelliML - Uploading",
+    page_title="IntelliML - Download",
     page_icon="🤖",
     initial_sidebar_state="expanded",
 )

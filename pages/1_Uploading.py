@@ -52,8 +52,11 @@ if file:
     effective_page_width = st.session_state["pdf_report"].w - 2*st.session_state["pdf_report"].l_margin
     st.session_state["print_w"]=effective_page_width
 
-    st.session_state["pdf_report"].set_font("Arial",size=24,style="B")
-    st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+    # st.session_state["pdf_report"].set_font("Arial",size=24,style="B")
+    # st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
+    
+    st.image("//assets/cover img.jpg",width=st.session_state["print_w"])
+    
     st.session_state["pdf_report"].ln(10)
     
     st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
@@ -61,7 +64,7 @@ if file:
     st.session_state["pdf_report"].set_draw_color(0,150,75)
     st.session_state["pdf_report"].set_line_width(3)
     st.session_state["pdf_report"].set_text_color(255,255,255)
-    st.session_state["pdf_report"].multi_cell(w=effective_page_width,txt="SAMPLE DATASET",ln=True,align='J',border=True,fill=True)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt="SAMPLE DATASET",ln=True,align='J',border=True,fill=True)
     st.session_state["pdf_report"].set_text_color(0,0,0)
     st.session_state["pdf_report"].set_line_width(0.1)
     st.session_state["pdf_report"].set_draw_color(30,30,30)
