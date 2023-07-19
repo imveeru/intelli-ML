@@ -58,8 +58,8 @@ st.title("Modelling")
 src=st.session_state["source_data"]
 target=st.session_state["target"]
 
-if st.button("Train the model"):
-    with st.spinner("Setting the experiment parameters..."):
+if st.button("Train and Test various Machine Learning models"):
+    with st.spinner("Setting up the experiment parameters..."):
         setup(src,target=target)
         setup_df=pull()
         #st.text(setup_df.columns)
@@ -74,7 +74,7 @@ if st.button("Train the model"):
                 
         The above given are the settings of an Machine learning experiment.
         Write a paragraph using the given data. Make sure the paragraph is in an academic tone. 
-        Strictly do not exceed 200 words.
+        Strictly do not exceed 150 words.
         '''
         st.subheader("Experiment Settings")
         st.dataframe(setup_df)
@@ -118,6 +118,7 @@ if st.button("Train the model"):
         Write the possible reason why it'd have performed well.
         Do not forget to include the comparison of other models.
         Make sure the content is in academic tone.
+        Do not exceed 200 words.
         '''
         
         model_exp_response=ask_llm(model_exp_prompt)
