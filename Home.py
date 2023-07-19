@@ -52,7 +52,7 @@ IntelliML is an innovative and powerful machine learning application developed u
 
 - **Data-Driven Insights:** The app provides valuable insights into the uploaded data, enabling users to make data-driven decisions for their business, research, or projects.
 
-- **State-of-the-Art Model Selection:** IntelliML employs the latest advancements in machine learning technology through Google's PALM API, ensuring the best possible model recommendations.
+- **State-of-the-Art Model Selection:** IntelliML employs the latest advancements in machine learning technology through Google's PALM API, ensuring the detailed explanations for the workflow.
 
 - **Comprehensive Reports:** Users receive detailed and easy-to-understand reports that can be shared with stakeholders or incorporated into presentations.
 
