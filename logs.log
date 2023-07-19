@@ -26873,3 +26873,281 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2023-07-19 23:52:11,160:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
   warnings.warn(
 
+2023-07-20 00:15:21,587:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-20 00:15:21,588:WARNING:E:\IntelliML\pages\1_Uploading.py:67: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt="SAMPLE DATASET",ln=True,align='J',border=True,fill=True)
+
+2023-07-20 00:15:48,858:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-20 00:15:48,859:WARNING:E:\IntelliML\pages\1_Uploading.py:67: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt="SAMPLE DATASET",ln=True,align='J',border=True,fill=True)
+
+2023-07-20 00:17:20,652:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-20 00:17:20,653:WARNING:E:\IntelliML\pages\2_Analysis.py:142: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].ln(5)
+
+2023-07-20 00:17:20,654:WARNING:E:\IntelliML\pages\2_Analysis.py:149: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].ln(5)
+
+2023-07-20 00:17:20,661:WARNING:E:\IntelliML\pages\2_Analysis.py:157: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=null_response,ln=True,align="J")
+
+2023-07-20 00:17:20,662:WARNING:E:\IntelliML\pages\2_Analysis.py:164: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=dist_response,ln=True,align="J")
+
+2023-07-20 00:17:22,334:WARNING:E:\IntelliML\pages\2_Analysis.py:174: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  
+
+2023-07-20 00:17:22,335:WARNING:E:\IntelliML\pages\2_Analysis.py:181: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  fig.tight_layout()
+
+2023-07-20 00:17:22,340:WARNING:E:\IntelliML\pages\2_Analysis.py:190: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  Also comment on the presence outliers in higher end and lower end of the scale.
+
+2023-07-20 00:17:22,341:WARNING:E:\IntelliML\pages\2_Analysis.py:197: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  
+
+2023-07-20 00:17:34,395:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-20 00:17:34,396:WARNING:E:\IntelliML\pages\2_Analysis.py:242: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  Give it as a detailed single paragraph in academic tone.
+
+2023-07-20 00:17:34,396:WARNING:E:\IntelliML\pages\2_Analysis.py:249: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  st.write(correlation_response)
+
+2023-07-20 00:17:41,133:WARNING:C:\Users\imvee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\fpdf\fpdf.py:1919: UserWarning: Substituting font arial by core font helvetica
+  warnings.warn(
+
+2023-07-20 00:17:41,133:WARNING:E:\IntelliML\pages\2_Analysis.py:298: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+
+2023-07-20 00:17:41,134:WARNING:E:\IntelliML\pages\2_Analysis.py:305: DeprecationWarning: The parameter "ln" is deprecated. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+
+2023-07-20 00:18:03,147:INFO:PyCaret RegressionExperiment
+2023-07-20 00:18:03,147:INFO:Logging name: reg-default-name
+2023-07-20 00:18:03,147:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-07-20 00:18:03,147:INFO:version 3.0.4
+2023-07-20 00:18:03,148:INFO:Initializing setup()
+2023-07-20 00:18:03,148:INFO:self.USI: 9129
+2023-07-20 00:18:03,148:INFO:self._variable_keys: {'idx', '_available_plots', 'X_test', 'memory', 'exp_id', 'X_train', 'fold_groups_param', 'fold_generator', 'USI', 'X', 'gpu_param', 'y', 'n_jobs_param', 'pipeline', 'exp_name_log', 'seed', 'log_plots_param', 'logging_param', 'gpu_n_jobs_param', '_ml_usecase', 'target_param', 'transform_target_param', 'y_train', 'y_test', 'html_param', 'data', 'fold_shuffle_param'}
+2023-07-20 00:18:03,148:INFO:Checking environment
+2023-07-20 00:18:03,148:INFO:python_version: 3.9.13
+2023-07-20 00:18:03,148:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-07-20 00:18:03,148:INFO:machine: AMD64
+2023-07-20 00:18:03,148:INFO:platform: Windows-10-10.0.22621-SP0
+2023-07-20 00:18:03,169:INFO:Memory: svmem(total=16572981248, available=5454647296, percent=67.1, used=11118333952, free=5454647296)
+2023-07-20 00:18:03,169:INFO:Physical Core: 4
+2023-07-20 00:18:03,169:INFO:Logical Core: 8
+2023-07-20 00:18:03,170:INFO:Checking libraries
+2023-07-20 00:18:03,170:INFO:System:
+2023-07-20 00:18:03,171:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-07-20 00:18:03,171:INFO:executable: C:\Users\imvee\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2023-07-20 00:18:03,171:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-07-20 00:18:03,172:INFO:PyCaret required dependencies:
+2023-07-20 00:18:03,172:INFO:                 pip: 22.0.4
+2023-07-20 00:18:03,172:INFO:          setuptools: 58.1.0
+2023-07-20 00:18:03,173:INFO:             pycaret: 3.0.4
+2023-07-20 00:18:03,173:INFO:             IPython: 7.25.0
+2023-07-20 00:18:03,173:INFO:          ipywidgets: 8.0.7
+2023-07-20 00:18:03,174:INFO:                tqdm: 4.65.0
+2023-07-20 00:18:03,174:INFO:               numpy: 1.22.4
+2023-07-20 00:18:03,174:INFO:              pandas: 1.5.3
+2023-07-20 00:18:03,174:INFO:              jinja2: 3.0.1
+2023-07-20 00:18:03,174:INFO:               scipy: 1.10.1
+2023-07-20 00:18:03,176:INFO:              joblib: 1.3.1
+2023-07-20 00:18:03,176:INFO:             sklearn: 0.24.2
+2023-07-20 00:18:03,176:INFO:                pyod: 1.1.0
+2023-07-20 00:18:03,176:INFO:            imblearn: 0.10.1
+2023-07-20 00:18:03,176:INFO:   category_encoders: 2.6.1
+2023-07-20 00:18:03,176:INFO:            lightgbm: 3.3.3
+2023-07-20 00:18:03,176:INFO:               numba: 0.57.1
+2023-07-20 00:18:03,176:INFO:            requests: 2.28.1
+2023-07-20 00:18:03,176:INFO:          matplotlib: 3.4.2
+2023-07-20 00:18:03,176:INFO:          scikitplot: 0.3.7
+2023-07-20 00:18:03,177:INFO:         yellowbrick: 1.5
+2023-07-20 00:18:03,177:INFO:              plotly: 5.15.0
+2023-07-20 00:18:03,177:INFO:    plotly-resampler: Not installed
+2023-07-20 00:18:03,178:INFO:             kaleido: 0.2.1
+2023-07-20 00:18:03,178:INFO:           schemdraw: 0.15
+2023-07-20 00:18:03,178:INFO:         statsmodels: 0.14.0
+2023-07-20 00:18:03,178:INFO:              sktime: 0.20.0
+2023-07-20 00:18:03,178:INFO:               tbats: 1.1.3
+2023-07-20 00:18:03,178:INFO:            pmdarima: 2.0.3
+2023-07-20 00:18:03,179:INFO:              psutil: 5.9.5
+2023-07-20 00:18:03,179:INFO:          markupsafe: 2.1.1
+2023-07-20 00:18:03,179:INFO:             pickle5: Not installed
+2023-07-20 00:18:03,179:INFO:         cloudpickle: 2.2.1
+2023-07-20 00:18:03,179:INFO:         deprecation: 2.1.0
+2023-07-20 00:18:03,179:INFO:              xxhash: 3.2.0
+2023-07-20 00:18:03,179:INFO:           wurlitzer: Not installed
+2023-07-20 00:18:03,180:INFO:PyCaret optional dependencies:
+2023-07-20 00:18:03,180:INFO:                shap: Not installed
+2023-07-20 00:18:03,180:INFO:           interpret: 0.4.2
+2023-07-20 00:18:03,180:INFO:                umap: Not installed
+2023-07-20 00:18:03,180:INFO:    pandas_profiling: 4.3.1
+2023-07-20 00:18:03,180:INFO:  explainerdashboard: Not installed
+2023-07-20 00:18:03,181:INFO:             autoviz: 0.1.730
+2023-07-20 00:18:03,181:INFO:           fairlearn: Not installed
+2023-07-20 00:18:03,181:INFO:          deepchecks: Not installed
+2023-07-20 00:18:03,181:INFO:             xgboost: 1.7.2
+2023-07-20 00:18:03,181:INFO:            catboost: Not installed
+2023-07-20 00:18:03,182:INFO:              kmodes: Not installed
+2023-07-20 00:18:03,182:INFO:             mlxtend: Not installed
+2023-07-20 00:18:03,182:INFO:       statsforecast: Not installed
+2023-07-20 00:18:03,183:INFO:        tune_sklearn: Not installed
+2023-07-20 00:18:03,183:INFO:                 ray: Not installed
+2023-07-20 00:18:03,183:INFO:            hyperopt: Not installed
+2023-07-20 00:18:03,183:INFO:              optuna: Not installed
+2023-07-20 00:18:03,184:INFO:               skopt: Not installed
+2023-07-20 00:18:03,184:INFO:              mlflow: Not installed
+2023-07-20 00:18:03,184:INFO:              gradio: Not installed
+2023-07-20 00:18:03,184:INFO:             fastapi: Not installed
+2023-07-20 00:18:03,184:INFO:             uvicorn: 0.22.0
+2023-07-20 00:18:03,184:INFO:              m2cgen: 0.10.0
+2023-07-20 00:18:03,184:INFO:           evidently: Not installed
+2023-07-20 00:18:03,184:INFO:               fugue: Not installed
+2023-07-20 00:18:03,184:INFO:           streamlit: 1.24.1
+2023-07-20 00:18:03,184:INFO:             prophet: Not installed
+2023-07-20 00:18:03,185:INFO:None
+2023-07-20 00:18:03,185:INFO:Set up data.
+2023-07-20 00:18:03,200:INFO:Set up train/test split.
+2023-07-20 00:18:03,211:INFO:Set up index.
+2023-07-20 00:18:03,213:INFO:Set up folding strategy.
+2023-07-20 00:18:03,213:INFO:Assigning column types.
+2023-07-20 00:18:03,219:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-07-20 00:18:03,219:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,232:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,243:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,352:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,430:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,431:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:03,436:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:03,436:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,446:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,454:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,564:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,677:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,677:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:03,682:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:03,683:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-07-20 00:18:03,693:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,701:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,809:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,880:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,880:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:03,883:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:03,893:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 00:18:03,908:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,006:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,081:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,082:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:04,085:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:04,086:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-07-20 00:18:04,100:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,209:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,285:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,287:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:04,292:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:04,308:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,411:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,484:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,485:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:04,490:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:04,490:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-07-20 00:18:04,591:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,670:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,672:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:04,676:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:04,813:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,890:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 00:18:04,892:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:04,896:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:04,897:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-07-20 00:18:05,015:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:05,105:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:05,109:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:05,232:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 00:18:05,305:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:05,309:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:05,310:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-07-20 00:18:05,500:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:05,504:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:05,675:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:05,679:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:05,681:INFO:Preparing preprocessing pipeline...
+2023-07-20 00:18:05,682:INFO:Set up simple imputation.
+2023-07-20 00:18:05,682:INFO:Set up column name cleaning.
+2023-07-20 00:18:05,722:INFO:Finished creating preprocessing pipeline.
+2023-07-20 00:18:05,728:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\imvee\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH', 'sulphates', 'alcohol'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2023-07-20 00:18:05,728:INFO:Creating final display dataframe.
+2023-07-20 00:18:05,848:INFO:Setup _display_container:                     Description             Value
+0                    Session id              5976
+1                        Target           quality
+2                   Target type        Regression
+3           Original data shape        (1599, 12)
+4        Transformed data shape        (1599, 12)
+5   Transformed train set shape        (1119, 12)
+6    Transformed test set shape         (480, 12)
+7              Numeric features                11
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              9129
+2023-07-20 00:18:06,026:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:06,047:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:06,223:INFO:Soft dependency imported: xgboost: 1.7.2
+2023-07-20 00:18:06,229:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 00:18:06,230:INFO:setup() successfully completed in 3.24s...............

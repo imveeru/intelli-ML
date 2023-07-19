@@ -55,7 +55,7 @@ if file:
     # st.session_state["pdf_report"].set_font("Arial",size=24,style="B")
     # st.session_state["pdf_report"].multi_cell(w=0,txt="IntelliML Report",ln=True,align="C")
     
-    st.image("//assets/cover img.jpg",width=st.session_state["print_w"])
+    st.session_state["pdf_report"].image("./assets/cover img.jpg",w=st.session_state["print_w"])
     
     st.session_state["pdf_report"].ln(10)
     
