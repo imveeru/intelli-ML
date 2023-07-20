@@ -46,9 +46,9 @@ if file:
     df.to_csv("sourcedata.csv",index=None)
     
     st.session_state["pdf_report"]=FPDF(format='A4', unit='mm')
+    st.session_state["pdf_report"].add_page()
     st.session_state["pdf_report"].set_margins(15)
     st.session_state["pdf_report"].set_auto_page_break(auto=True,margin=15)
-    st.session_state["pdf_report"].add_page()
     effective_page_width = st.session_state["pdf_report"].w - 2*st.session_state["pdf_report"].l_margin
     st.session_state["print_w"]=effective_page_width
 
