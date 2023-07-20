@@ -62,7 +62,7 @@ IntelliML is an innovative and powerful machine learning application developed u
 Developed by [Veeramanohar](https://github.com/imveeru)
 '''
 
-st.write(desc,markdown=True)
+st.markdown(desc)
 
 st.info("As of now, only Regression tasks are supported. Classification, and Clustering tasks will be added soon!",icon="⌛")
 
