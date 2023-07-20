@@ -76,6 +76,5 @@ if file:
     st.dataframe(df)  
     st.caption("Now click on Analysis button to perform detailed data analysis on the uploaded dataset.")  
     
-
 with st.sidebar:
     st.info("Click on the \"Analysis\" button in the sidebar to analyse the uploaded dataset.")  
