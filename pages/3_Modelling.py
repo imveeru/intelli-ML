@@ -17,27 +17,50 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 from pycaret.regression import *
 import google.generativeai as palm
+import json
+import google.generativeai as palm
+from google.auth import credentials
+from google.oauth2 import service_account
+import google.cloud.aiplatform as aiplatform
+import vertexai
+from vertexai.language_models import TextGenerationModel
 from dotenv import dotenv_values
 
 config = dotenv_values(".env") 
 
-palm.configure(api_key=config["GOOGLE_PALM_API_KEY"])
+service_account_info=json.loads(config["GOOGLE_APPLICATION_CREDENTIALS"])
+
+my_credentials = service_account.Credentials.from_service_account_info(
+    service_account_info
+)
+
+# Initialize Google AI Platform with project details and credentials
+aiplatform.init(
+    credentials=my_credentials,
+)
+
+# with open("service_account.json", encoding="utf-8") as f:
+#     project_json = json.load(f)
+project_id = service_account_info["project_id"]
+
+
+# Initialize Vertex AI with project and location
+vertexai.init(project=project_id, location="us-central1")
 
 def ask_llm(prompt):
-    defaults = {
-        'model': 'models/text-bison-001',
-        'temperature': 0.7,
-        'candidate_count': 1,
-        'top_k': 40,
-        'top_p': 0.95,
-        'max_output_tokens': 1024,
-        'stop_sequences': [],
-        'safety_settings': [{"category":"HARM_CATEGORY_DEROGATORY","threshold":1},{"category":"HARM_CATEGORY_TOXICITY","threshold":1},{"category":"HARM_CATEGORY_VIOLENCE","threshold":2},{"category":"HARM_CATEGORY_SEXUAL","threshold":2},{"category":"HARM_CATEGORY_MEDICAL","threshold":2},{"category":"HARM_CATEGORY_DANGEROUS","threshold":2}],
+    parameters = {
+        "max_output_tokens": 1024,
+        "temperature": 0.5,
+        "top_p": 0.8,
+        "top_k": 40
     }
+    model = TextGenerationModel.from_pretrained("text-bison@001")
+    response = model.predict(
+        prompt,
+        **parameters
+    )
     
-    res=palm.generate_text(**defaults, prompt=prompt)
-    
-    return res.result
+    return response.text
 
 def print_df(df,pdf,w):
     df = df.applymap(str)  # Convert all data inside dataframe into string type

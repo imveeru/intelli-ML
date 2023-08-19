@@ -24,28 +24,65 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 import numpy as np
+import json
 import google.generativeai as palm
+from google.auth import credentials
+from google.oauth2 import service_account
+import google.cloud.aiplatform as aiplatform
+import vertexai
+from vertexai.language_models import TextGenerationModel
 from dotenv import dotenv_values
 
 config = dotenv_values(".env") 
 
-palm.configure(api_key=config["GOOGLE_PALM_API_KEY"])
+service_account_info=json.loads(config["GOOGLE_APPLICATION_CREDENTIALS"])
+
+my_credentials = service_account.Credentials.from_service_account_info(
+    service_account_info
+)
+
+# Initialize Google AI Platform with project details and credentials
+aiplatform.init(
+    credentials=my_credentials,
+)
+
+# with open("service_account.json", encoding="utf-8") as f:
+#     project_json = json.load(f)
+project_id = service_account_info["project_id"]
+
+
+# Initialize Vertex AI with project and location
+vertexai.init(project=project_id, location="us-central1")
+
+# palm.configure(api_key=config["GOOGLE_PALM_API_KEY"])
 
 def ask_llm(prompt):
-    defaults = {
-        'model': 'models/text-bison-001',
-        'temperature': 0.7,
-        'candidate_count': 1,
-        'top_k': 40,
-        'top_p': 0.95,
-        'max_output_tokens': 1024,
-        'stop_sequences': [],
-        'safety_settings': [{"category":"HARM_CATEGORY_DEROGATORY","threshold":1},{"category":"HARM_CATEGORY_TOXICITY","threshold":1},{"category":"HARM_CATEGORY_VIOLENCE","threshold":2},{"category":"HARM_CATEGORY_SEXUAL","threshold":2},{"category":"HARM_CATEGORY_MEDICAL","threshold":2},{"category":"HARM_CATEGORY_DANGEROUS","threshold":2}],
+    # defaults = {
+    #     'model': 'models/text-bison-001',
+    #     'temperature': 0.7,
+    #     'candidate_count': 1,
+    #     'top_k': 40,
+    #     'top_p': 0.95,
+    #     'max_output_tokens': 1024,
+    #     'stop_sequences': [],
+    #     'safety_settings': [{"category":"HARM_CATEGORY_DEROGATORY","threshold":1},{"category":"HARM_CATEGORY_TOXICITY","threshold":1},{"category":"HARM_CATEGORY_VIOLENCE","threshold":2},{"category":"HARM_CATEGORY_SEXUAL","threshold":2},{"category":"HARM_CATEGORY_MEDICAL","threshold":2},{"category":"HARM_CATEGORY_DANGEROUS","threshold":2}],
+    # }
+    
+    # res=palm.generate_text(**defaults, prompt=prompt)
+    
+    parameters = {
+        "max_output_tokens": 1024,
+        "temperature": 0.5,
+        "top_p": 0.8,
+        "top_k": 40
     }
+    model = TextGenerationModel.from_pretrained("text-bison@001")
+    response = model.predict(
+        prompt,
+        **parameters
+    )
     
-    res=palm.generate_text(**defaults, prompt=prompt)
-    
-    return res.result
+    return response.text
 
 
 st.title("Automated Exploratory Data Analysis")
@@ -61,7 +98,7 @@ def feature_dist(data):
 
     # Plot histograms
     for ax, column in zip(axes.flatten(), data.columns):
-        sns.histplot(data[column], kde=True, ax=ax)
+        #sns.histplot(data[column], kde=True, ax=ax)
         ax.set_title(column, fontsize=14)
         ax.tick_params(axis='x', labelrotation=45)
 
@@ -139,14 +176,14 @@ def feature_dist(data):
     st.session_state["pdf_report"].set_draw_color(0,150,75)
     st.session_state["pdf_report"].set_line_width(3)
     st.session_state["pdf_report"].set_text_color(255,255,255)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt="FEATURE DESCRIPTION",ln=True,align='J',border=True,fill=True)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt="FEATURE DESCRIPTION",align='J',border=True,fill=True)
     st.session_state["pdf_report"].set_text_color(0,0,0)
     st.session_state["pdf_report"].set_line_width(0.1)
     st.session_state["pdf_report"].set_draw_color(30,30,30)
     st.session_state["pdf_report"].set_fill_color(255,255,255)
     st.session_state["pdf_report"].ln(2.5)
     st.session_state["pdf_report"].set_font("Arial",size=9)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=features_response,ln=True,align="J")
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt=features_response,align="J")
     st.session_state["pdf_report"].ln(5)
     
     st.session_state["pdf_report"].set_font("Arial",size=12,style="B")
