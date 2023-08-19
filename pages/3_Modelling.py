@@ -16,7 +16,6 @@ header {visibility: hidden;}
 st.markdown(hide_st_style, unsafe_allow_html=True)  
 
 from pycaret.regression import *
-import google.generativeai as palm
 import json
 import google.generativeai as palm
 from google.auth import credentials
