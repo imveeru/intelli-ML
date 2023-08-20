@@ -38,6 +38,8 @@ config = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
 
 service_account_info=json.loads(config)
 
+service_account_info["private_key"]=service_account_info["private_key"].replace("\\n","\n")
+
 st.write(service_account_info)
 
 my_credentials = service_account.Credentials.from_service_account_info(
