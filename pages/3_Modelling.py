@@ -23,27 +23,19 @@ from google.oauth2 import service_account
 import google.cloud.aiplatform as aiplatform
 import vertexai
 from vertexai.language_models import TextGenerationModel
-from dotenv import dotenv_values
-
-config = dotenv_values(".env") 
-
-service_account_info=json.loads(config["GOOGLE_APPLICATION_CREDENTIALS"])
+config = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
+service_account_info=json.loads(config)
+service_account_info["private_key"]=service_account_info["private_key"].replace("\\n","\n")
 
 my_credentials = service_account.Credentials.from_service_account_info(
     service_account_info
 )
-
 # Initialize Google AI Platform with project details and credentials
 aiplatform.init(
     credentials=my_credentials,
 )
-
-# with open("service_account.json", encoding="utf-8") as f:
-#     project_json = json.load(f)
 project_id = service_account_info["project_id"]
 
-
-# Initialize Vertex AI with project and location
 vertexai.init(project=project_id, location="us-central1")
 
 def ask_llm(prompt):
