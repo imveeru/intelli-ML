@@ -35,6 +35,8 @@ from dotenv import dotenv_values
 
 config = dotenv_values(".env") 
 
+st.write(config)
+
 service_account_info=json.loads(config["GOOGLE_APPLICATION_CREDENTIALS"])
 
 my_credentials = service_account.Credentials.from_service_account_info(
