@@ -34,6 +34,7 @@ from vertexai.language_models import TextGenerationModel
 from dotenv import dotenv_values
 
 config = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
+config=config.replace("\\n","\n")
 
 service_account_info=json.loads(config)
 
