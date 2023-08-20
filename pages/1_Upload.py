@@ -64,7 +64,7 @@ if file:
     st.session_state["pdf_report"].set_draw_color(0,150,75)
     st.session_state["pdf_report"].set_line_width(3)
     st.session_state["pdf_report"].set_text_color(255,255,255)
-    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],txt="SAMPLE DATASET",align='J',border=True,fill=True)
+    st.session_state["pdf_report"].multi_cell(w=st.session_state["print_w"],h=0,txt="SAMPLE DATASET",align='J',border=True,fill=True)
     st.session_state["pdf_report"].set_text_color(0,0,0)
     st.session_state["pdf_report"].set_line_width(0.1)
     st.session_state["pdf_report"].set_draw_color(30,30,30)
