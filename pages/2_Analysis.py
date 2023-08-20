@@ -33,7 +33,7 @@ import vertexai
 from vertexai.language_models import TextGenerationModel
 from dotenv import dotenv_values
 
-config = st.secrets("GOOGLE_APPLICATION_CREDENTIALS")
+config = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
 
 st.write(config)
 
